@@ -3,7 +3,7 @@
 - 👀 I’m interested in Data Analytics. 
 - I am keen to develop as a graduate software developer in IT Industries.
 - 🌱 I’m currently learning React Native, Firebase
-- 💞️ I’m looking to collaborate on 
+
 - 📫 Reach me on my personal Email: kaashgarg@gmail.com | https://www.linkedin.com/in/amangupta1911
 
 
