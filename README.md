@@ -4,7 +4,7 @@
 - I am keen to develop as a graduate software developer in IT Industries.
 - 🌱 I’m currently learning React Native, Firebase
 
-- 📫 Reach me on my personal Email: kaashgarg@gmail.com | https://www.linkedin.com/in/amangupta1911
+- 📫 Reach me on my personal Email: amangupta191193@gmail.com | https://www.linkedin.com/in/amangupta1911
 
 
 
