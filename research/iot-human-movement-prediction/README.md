@@ -1,56 +1,51 @@
-# Human Movement Prediction using IoT Data
+<div align="center">
 
-A machine-learning project based on my MSc dissertation and environmental IoT sensor data.
+<img src="figures/project-banner.svg" alt="Robust IoT Human Movement Prediction" width="100%" />
 
-## About
+# Robust IoT Human Movement Prediction
 
-My MSc dissertation was **Intelligent System to Predict Human Movement near IoT Devices**.
+**Environmental IoT • Machine Learning • Human Movement**
 
-The project uses environmental sensor readings from IoT devices and machine-learning methods to study and predict whether human movement is recorded.
+[Overview](#overview) • [MSc Foundation](#msc-foundation) • [Dataset](#dataset) • [Documentation](#documentation)
 
-## Dataset
+</div>
 
-The project uses the **Environmental Sensor Telemetry Data** dataset published on Kaggle by **Gary A. Stafford**.
+## Overview
 
-The Kaggle dataset is listed as **CC0: Public Domain**. The source, dataset structure and licence have been checked against the Kaggle dataset page.
+This research project builds on my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
 
-[Dataset source on Kaggle](https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k)
+It uses environmental sensor data from IoT devices and machine-learning methods to study and predict human movement.
 
-## What I used
+The repository brings together the original MSc work, later experimental analysis, results and documentation in one place.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter Notebook
-- Matplotlib
-- Sensor data from IoT devices
+## MSc Foundation
 
-## Main steps
-
-1. Load and understand the dataset
-2. Check and prepare the data
-3. Explore the sensor readings
-4. Train machine-learning models
-5. Compare the model results
-6. Document the work
-
-## MSc Project
-
-**Degree:** MSc Advanced Computer Science  
-**University:** Birmingham City University, UK  
-**Result:** Distinction
+**MSc Advanced Computer Science — Distinction**  
+Birmingham City University, UK
 
 **Dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
 
-## Project Documentation
+The original MSc work focused on preparing environmental sensor data, exploring the data and comparing machine-learning models for human movement prediction.
 
-- [Project overview](docs/01_project_overview.md)
-- [MSc background](docs/02_msc_background.md)
-- [Dataset](docs/03_dataset.md)
-- [Basic methodology](docs/04_methodology.md)
+## Current Research Direction
 
-## Repository
+**Robust rare-event human movement prediction from environmental IoT sensors.**
+
+The current work extends the MSc foundation by looking at prediction behaviour across time and sensing devices.
+
+> The later research experiments are clearly separated from the original MSc work.
+
+## Dataset
+
+The project uses the **Environmental Sensor Telemetry Data** dataset published on Kaggle by **Gary A. Stafford**. The dataset is listed as **CC0: Public Domain**.
+
+The working dataset contains **405,184 rows**, **9 columns** and data from **3 IoT devices**. The observation period is **12–19 July 2020 UTC**.
+
+[Dataset source on Kaggle](https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k)
+
+The raw CSV is not stored in this repository.
+
+## Project Structure
 
 ```text
 research/iot-human-movement-prediction/
@@ -63,4 +58,26 @@ research/iot-human-movement-prediction/
 └── requirements.txt
 ```
 
-The repository is being kept simple and documents the project from its MSc foundation onward.
+## Documentation
+
+- [Project overview](docs/01_project_overview.md)
+- [MSc background](docs/02_msc_background.md)
+- [Dataset](docs/03_dataset.md)
+- [Basic methodology](docs/04_methodology.md)
+- [Dataset documentation](docs/dataset_documentation.md)
+- [MSc results](docs/msc_results.md)
+- [Experimental protocol](docs/experimental_protocol.md)
+- [Reproducibility](docs/reproducibility.md)
+
+## Code and Results
+
+The repository contains Python notebooks, supporting source code and documented results. The MSc results and later research-extension experiments are kept as separate records so the history of the project remains clear.
+
+## Citation
+
+See [`CITATION.cff`](CITATION.cff) for citation information.
+
+---
+
+**Author:** Aman Gupta  
+**Field:** AI • Data Science • IoT
