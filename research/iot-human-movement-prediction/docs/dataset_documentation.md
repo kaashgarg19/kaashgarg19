@@ -2,11 +2,20 @@
 
 ## Dataset role
 
-The dataset is the empirical foundation for the MSc project and its current research extension. It was obtained from Kaggle and is therefore documented as an external dataset rather than as data collected by the researcher.
+The dataset is the empirical foundation for the MSc project and its current research extension. It was obtained from Kaggle and is documented as an external dataset rather than as data collected by the researcher.
 
-## Audited structure
+## Source and licence
 
-| Item | Audited value |
+**Dataset:** Environmental Sensor Telemetry Data  
+**Publisher:** Gary A. Stafford  
+**Source:** https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k  
+**Licence:** CC0: Public Domain
+
+The source, dataset description and licence were checked against the Kaggle dataset page on **15 September 2026**.
+
+## Dataset structure
+
+| Item | Value |
 |---|---|
 | Observations | 405,184 |
 | Columns | 9 |
@@ -22,34 +31,18 @@ The dataset is the empirical foundation for the MSc project and its current rese
 
 ## Interpretation
 
-The target is highly imbalanced: only 482 of 405,184 observations are positive movement events. Consequently, headline accuracy can be misleading. The research emphasises precision, recall, F1-score, average precision/PR-AUC and threshold-dependent behaviour.
+The target is highly imbalanced: only 482 of 405,184 observations are positive movement events. Consequently, headline accuracy can be misleading. The research therefore considers precision, recall, F1-score, average precision/PR-AUC and threshold-dependent behaviour.
 
 ## Timestamp note
 
-The raw `ts` field has been verified as Unix seconds for the current research record. An earlier nanosecond interpretation was rejected. The 13 duplicate timestamp values are retained because simultaneous readings across multiple devices can be plausible.
+The raw `ts` field is recorded as Unix time. The 13 duplicate timestamp values are retained because simultaneous readings across multiple devices can be plausible.
 
-## Provenance and licensing
+## Data-quality record
 
-**Source:** Kaggle (external dataset).  
-**Redistribution:** Raw data should not be committed to this repository unless the original dataset licence explicitly permits redistribution.
+The working dataset used in this project was checked for its basic structure and quality. The documented record includes the row and column counts, data types, missing-value status, timestamp information, device identifiers, duplicate timestamps and target prevalence.
 
-Before publication, record the exact Kaggle dataset URL, dataset author, licence and retrieval date here. The repository should provide source instructions rather than silently redistributing a third-party dataset where permission is unclear.
-
-## Data-quality checks
-
-The validation stage should confirm:
-
-- row and column counts
-- data types
-- missing values
-- duplicates
-- timestamp range
-- device identifiers
-- target prevalence
-- invalid sensor values
-- target leakage risks
-- consistency with the dataset used for the documented experiments
+The dataset used for the documented experiments contains no missing values.
 
 ## Reproducibility
 
-The dataset itself is not treated as immutable merely because it was used in the MSc work. Any changed or re-downloaded version must be audited and its provenance recorded before results are considered reproducible.
+The raw dataset is not stored in this repository. Reproduction should use the original Kaggle source and the documented dataset structure.
