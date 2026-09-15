@@ -28,7 +28,7 @@ The later experiments are explicitly presented as an extension and are not descr
 
 ## MSc outputs
 
-The repository now includes a verified historical MSc results record and lightweight reconstructed figures:
+The repository includes a verified historical MSc results record and lightweight reconstructed figures:
 
 - [`results/msc_original_results.csv`](results/msc_original_results.csv) — reported model-comparison accuracies.
 - [`figures/msc_model_accuracy.svg`](figures/msc_model_accuracy.svg) — reconstructed accuracy comparison.
@@ -51,7 +51,7 @@ The figures are labelled **reconstructed** rather than represented as the origin
 
 The dataset was obtained from Kaggle. The raw file is intentionally not redistributed here until its exact source, attribution and licence have been verified.
 
-See [`docs/codebook.md`](docs/codebook.md) and [`docs/dataset_documentation.md`](docs/dataset_documentation.md).
+See [`docs/codebook.md`](docs/codebook.md), [`docs/dataset_documentation.md`](docs/dataset_documentation.md), and [`docs/reproducibility.md`](docs/reproducibility.md).
 
 ## Models
 
@@ -78,6 +78,8 @@ research/iot-human-movement-prediction/
 │   ├── codebook.md
 │   ├── methodology.md
 │   ├── experimental_protocol.md
+│   ├── reproducibility.md
+│   ├── repository_audit.md
 │   ├── msc_foundation.md
 │   ├── msc_original_implementation.md
 │   ├── msc_results.md
@@ -101,16 +103,17 @@ research/iot-human-movement-prediction/
 │   └── msc_original.py
 └── results/
     ├── README.md
+    ├── canonical_research_metrics.csv
     └── msc_original_results.csv
 ```
 
 ## Notebook roles
 
 1. **01_data_validation** — schema, timestamp, device and imbalance audit.
-2. **02_msc_original_analysis** — reproducible reconstruction of the MSc analytical foundation and telemetry visualisation.
-3. **03_baseline_models** — controlled random 60/20/20 evaluation.
+2. **02_msc_original_analysis** — reproducible reconstruction of the MSc analytical foundation and historical results.
+3. **03_baseline_models** — controlled random 60/20/20 evaluation with validation-only threshold selection.
 4. **04_temporal_evaluation** — chronological 60/20/20 evaluation.
-5. **05_robustness_analysis** — entry point for unseen-device, feature-ablation, threshold and uncertainty artifacts.
+5. **05_robustness_analysis** — documented entry point for the broader robustness evidence record.
 
 ## Canonical experimental record
 
@@ -137,8 +140,8 @@ Before calling the repository fully reproducible, record:
 - [ ] Dataset licence
 - [ ] Retrieval date
 - [ ] SHA-256 dataset hash
-- [ ] Python version
-- [ ] pandas / NumPy / scikit-learn versions
+- [ ] Exact Python version
+- [ ] Exact pandas / NumPy / scikit-learn versions
 - [ ] Runtime/hardware where relevant
 - [x] Split protocol
 - [x] Random seed
@@ -146,13 +149,18 @@ Before calling the repository fully reproducible, record:
 - [x] Canonical model configurations
 - [x] Threshold-selection rule
 - [x] Canonical metrics and experiment inventory
+- [ ] Canonical research-extension CSV/figure artifacts
 
 ## Status
 
 **MSc-to-research connection:** complete  
 **MSc results package:** complete  
 **Research foundation:** complete  
-**Dataset audit:** complete  
+**Dataset audit:** complete for the working dataset; provenance metadata pending  
 **Core and robustness experiments:** complete in the research record  
-**GitHub reproducibility package:** in progress  
-**Next:** verify exact dataset provenance/licence/hash and add canonical research-extension CSV/figure outputs.
+**GitHub reproducibility package:** substantially complete, with P0 provenance/output items pending  
+**Next:** verify dataset provenance/licence/hash and commit the remaining authoritative research-extension result/figure artifacts.
+
+## Audit
+
+See [`docs/repository_audit.md`](docs/repository_audit.md) for the file-by-file readiness assessment and priority fixes.
