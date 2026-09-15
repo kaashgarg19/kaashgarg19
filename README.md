@@ -1,5 +1,15 @@
 # Hi, I'm Aman Gupta 👋
 
+<p align="center">
+  <img src="research-banner.svg" alt="Robust AI for Environmental IoT research banner" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Research-AI%20%7C%20Data%20Science%20%7C%20IoT-informational" alt="Research" />
+  <img src="https://img.shields.io/badge/Python-Research%20Workflow-informational" alt="Python" />
+  <img src="https://img.shields.io/badge/Status-Research%20Portfolio%20in%20Progress-informational" alt="Status" />
+</p>
+
 ### Researcher | AI • Data Science • IoT
 
 I am an MSc Advanced Computer Science graduate from Birmingham City University, with a research background in machine learning, IoT sensing and data-driven analysis of human movement.
@@ -28,6 +38,9 @@ I am extending this work to investigate how reliably machine-learning models can
 📁 **Flagship research repository:**  
 [IoT Human Movement Prediction](research/iot-human-movement-prediction/)
 
+📊 **Research figures:**  
+[View MSc and research figures](research/iot-human-movement-prediction/figures/)
+
 ---
 
 ## 🎓 Academic Background
@@ -42,9 +55,9 @@ Maharshi Dayanand University, India
 
 **Intelligent System to Predict Human Movement near IoT Devices**
 
-The GitHub research project preserves a verified reconstruction of the original MSc implementation and results, then separates those historical methods from the later research extension.
+The GitHub research project preserves a verified reconstruction of the original MSc implementation and results, then clearly separates those historical methods from the later research extension.
 
-📚 [MSc implementation reconstruction](research/iot-human-movement-prediction/docs/msc_original_implementation.md) · [MSc results](research/iot-human-movement-prediction/docs/msc_results.md)
+📚 [MSc dissertation information](research/iot-human-movement-prediction/docs/dissertation.md) · [MSc implementation](research/iot-human-movement-prediction/docs/msc_original_implementation.md) · [MSc results](research/iot-human-movement-prediction/docs/msc_results.md)
 
 ---
 
@@ -114,23 +127,24 @@ The flagship repository includes:
 
 ---
 
+## 🔗 Research Profile Links
+
+- 🌐 **Research website:** coming soon
+- 📄 **Academic CV:** coming soon
+- 🧬 **ORCID:** to be added
+- 📚 **MSc dissertation:** public PDF link to be added after preparing the shareable version
+- 💼 [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+- 💻 [GitHub](https://github.com/kaashgarg19)
+
+These placeholders are intentional; no unverified profile URL or identifier is being invented.
+
+---
+
 ## 🌱 Current Research Direction
 
 I am interested in pursuing research in **AI, Data Science and IoT**, with a particular focus on developing machine-learning systems that remain reliable when real-world sensor data changes over time, across devices and across environmental conditions.
 
 I am currently preparing for future **MPhil/PhD research opportunities in Australia**.
-
----
-
-## 🤝 Connect With Me
-
-📧 **Email:** amangupta191193@gmail.com
-
-💼 **LinkedIn:**  
-https://www.linkedin.com/in/amangupta1911
-
-💻 **GitHub:**  
-https://github.com/kaashgarg19
 
 ---
 
