@@ -1,80 +1,60 @@
 # Human Movement Prediction using IoT Data
 
-A machine-learning project using environmental IoT sensor data to predict human movement.
+A machine-learning project based on my MSc dissertation and environmental IoT sensor data.
 
-## About the project
+## About
 
-This project started as my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+My MSc dissertation was **Intelligent System to Predict Human Movement near IoT Devices**.
 
-The project uses sensor measurements such as temperature, humidity, light, smoke and gas-related readings to study human movement near IoT devices.
+The project looks at environmental sensor readings and uses machine-learning methods to predict whether human movement is present near an IoT device.
 
-I have kept the original MSc work and later analysis together in this project so the development of the work can be followed clearly.
+## What I used
 
-## What the project includes
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Jupyter Notebook
+- Matplotlib
+- Sensor data from IoT devices
 
-- Data exploration and preprocessing
-- Machine-learning classification
-- Logistic Regression
-- Random Forest
-- Histogram Gradient Boosting
-- Model evaluation
-- Temporal evaluation
-- Device-level evaluation
-- Feature analysis
-- Threshold analysis
+## Main steps
 
-## Dataset
+1. Load and understand the dataset
+2. Clean and prepare the data
+3. Explore the sensor readings
+4. Train machine-learning models
+5. Compare the model results
+6. Document the work
 
-The working dataset contains:
+## MSc Project
 
-- 405,184 observations
-- 9 columns
-- 6 environmental sensor measurements
-- 3 IoT devices
-- 482 movement events
-- About 0.119% positive events
-- About 8 days of observations
-
-The dataset was obtained from Kaggle. The raw dataset is not included here while its source and licence information are being checked.
-
-## MSc work
-
-**MSc:** Advanced Computer Science  
+**Degree:** MSc Advanced Computer Science  
 **University:** Birmingham City University, UK  
-**Result:** Distinction  
+**Result:** Distinction
+
 **Dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
 
-The original MSc implementation and reported results are documented in the `docs/` folder.
+## Project Documentation
 
-- [MSc foundation](docs/msc_foundation.md)
-- [Original implementation](docs/msc_original_implementation.md)
-- [Original MSc results](docs/msc_results.md)
+The documentation is being built step by step, starting with the original MSc project and its basic dataset and methodology.
 
-## Repository structure
+- [Project overview](docs/01_project_overview.md)
+- [MSc background](docs/02_msc_background.md)
+- [Dataset](docs/03_dataset.md)
+- [Basic methodology](docs/04_methodology.md)
+
+## Repository
 
 ```text
-├── data/        Dataset instructions
-├── docs/        Project documentation
-├── figures/     Figures
-├── notebooks/   Analysis notebooks
-├── results/     Results
-├── src/         Python code
+research/iot-human-movement-prediction/
+├── data/
+├── docs/
+├── figures/
+├── notebooks/
+├── results/
+├── src/
 └── requirements.txt
 ```
 
-## Notebooks
-
-1. `01_data_validation.ipynb` — dataset checks
-2. `02_msc_original_analysis.ipynb` — MSc analysis and results
-3. `03_baseline_models.ipynb` — baseline models
-4. `04_temporal_evaluation.ipynb` — temporal analysis
-5. `05_robustness_analysis.ipynb` — additional analysis
-
-## Results
-
-- [Original MSc model results](results/msc_original_results.csv)
-- [Research metrics](results/canonical_research_metrics.csv)
-
-## Note
-
-The additional analysis in this repository extends the original MSc project. It should not be confused with work that was part of the 2021 dissertation.
+More analysis and documentation can be added later as the project develops.
