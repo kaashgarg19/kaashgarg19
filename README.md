@@ -1,49 +1,37 @@
 # Hi, I'm Aman Gupta 👋
 
-<p align="center">
-  <img src="research-banner.svg" alt="Robust AI for Environmental IoT research banner" width="100%" />
-</p>
+**MSc Advanced Computer Science | Data Science | Machine Learning | IoT**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Research-AI%20%7C%20Data%20Science%20%7C%20IoT-informational" alt="Research" />
-  <img src="https://img.shields.io/badge/Python-Research%20Workflow-informational" alt="Python" />
-  <img src="https://img.shields.io/badge/Status-Research%20Portfolio%20in%20Progress-informational" alt="Status" />
-</p>
+I am an MSc Advanced Computer Science graduate from Birmingham City University. I enjoy working with data, machine learning and IoT projects.
 
-### Researcher | AI • Data Science • IoT
+## 🔬 My Research
 
-I am an MSc Advanced Computer Science graduate from Birmingham City University, with a research background in machine learning, IoT sensing and data-driven analysis of human movement.
+### Human Movement Prediction using IoT Data
 
-My current research interests focus on **robust machine learning for environmental IoT sensing**, particularly rare-event prediction, temporal generalisation, device-level distribution shift and reliable evaluation of highly imbalanced data.
+This is my main research project. It started from my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
 
----
+I am now extending the work to study how reliable machine-learning models are when IoT data changes over time and between devices.
 
-## 🔬 Current Research
+**Quick links:**
 
-### Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
+👉 [Open the research project](research/iot-human-movement-prediction/)
 
-My current research builds on my MSc dissertation:
+👉 [Research questions](research/iot-human-movement-prediction/docs/research_questions.md)
 
-> **Intelligent System to Predict Human Movement near IoT Devices**
+👉 [MSc work and results](research/iot-human-movement-prediction/docs/msc_results.md)
 
-I am extending this work to investigate how reliably machine-learning models can predict rare human-movement events when sensor data changes across time and sensing devices.
+👉 [Research figures](research/iot-human-movement-prediction/figures/)
 
-- ⏱️ Temporal generalisation
-- 📡 Unseen-device evaluation
-- ⚖️ Extreme class imbalance
-- 🔎 Feature ablation
-- 🎚️ Threshold sensitivity
-- 📐 Uncertainty and reliability analysis
+### What I am studying
 
-📁 **Flagship research repository:**  
-[IoT Human Movement Prediction](research/iot-human-movement-prediction/)
+- Machine learning for IoT data
+- Human movement prediction
+- Rare-event and imbalanced data
+- Prediction over time
+- Testing models on different devices
+- Model evaluation and reliability
 
-📊 **Research figures:**  
-[View MSc and research figures](research/iot-human-movement-prediction/figures/)
-
----
-
-## 🎓 Academic Background
+## 🎓 Education
 
 **MSc Advanced Computer Science — Distinction**  
 Birmingham City University, UK
@@ -51,101 +39,49 @@ Birmingham City University, UK
 **BTech Computer Science Engineering**  
 Maharshi Dayanand University, India
 
-### MSc Dissertation
+## 💻 Skills
 
-**Intelligent System to Predict Human Movement near IoT Devices**
+**Data & Programming:** Python, SQL, Pandas, NumPy, Jupyter
 
-The GitHub research project preserves a verified reconstruction of the original MSc implementation and results, then clearly separates those historical methods from the later research extension.
+**Machine Learning:** Scikit-learn, classification, model evaluation, data preprocessing
 
-📚 [MSc dissertation information](research/iot-human-movement-prediction/docs/dissertation.md) · [MSc implementation](research/iot-human-movement-prediction/docs/msc_original_implementation.md) · [MSc results](research/iot-human-movement-prediction/docs/msc_results.md)
+**Other:** JavaScript, React Native, Angular, HTML, CSS
 
----
+## 📁 Selected Projects
 
-## 🧪 Research Interests
+⭐ **IoT Human Movement Prediction** — my main research project
 
-- Internet of Things (IoT)
-- Machine Learning
-- Data Science
-- Human Activity / Movement Recognition
-- Rare-Event Prediction
-- Imbalanced Classification
-- Distribution Shift
-- Temporal Generalisation
-- Device-Level Generalisation
-- Environmental Sensing
-- Explainable & Reliable AI
-- Reproducible Research
+📈 **Stock Market Portfolio Optimisation** — portfolio and risk/return analysis
 
----
+📊 **Amazon Prime Data Analysis** — exploratory data analysis with Python
 
-## 💻 Technical Skills
+📊 **Data Science Coursework** — machine-learning and data-analysis projects
 
-**Programming & Data**  
-Python • SQL • JavaScript • JSON
+## 📚 Research Work
 
-**Machine Learning & Analytics**  
-Scikit-learn • Pandas • NumPy • Jupyter • Machine Learning • Data Analysis
+The research project contains:
 
-**Development**  
-React Native • Angular • Node.js • HTML • CSS
-
-**Research & Reproducibility**  
-Experimental design • Model evaluation • Data preprocessing • Statistical analysis • Research documentation • Reproducible workflows
-
----
-
-## 📊 Selected Projects
-
-### 🔬 IoT Human Movement Prediction
-Flagship research project extending my MSc work into robust evaluation of rare human-movement prediction under temporal and device-level distribution shifts.
-
-### 📈 Stock Market Portfolio Optimisation
-Data-driven analysis of portfolio optimisation and risk/return relationships.
-
-### 📊 Amazon Prime Data Analysis
-Exploratory analysis using Python and Jupyter Notebook.
-
-### 📈 Data Science & Machine Learning
-Machine-learning projects involving exploratory analysis, prediction and model evaluation.
-
----
-
-## 📚 Research & Reproducibility
-
-The flagship repository includes:
-
+- My MSc research background
 - Dataset documentation and codebook
 - Original MSc implementation reconstruction
-- Original MSc model-comparison outputs
-- Reconstructed MSc figures
-- Experimental protocol
-- Baseline and temporal evaluation notebooks
-- Unseen-device analysis
-- Feature ablation
-- Threshold sensitivity
-- Uncertainty analysis
+- Original MSc results
+- Research questions and methodology
+- Experimental notebooks
+- Temporal evaluation
+- Device-level evaluation
+- Feature analysis
+- Threshold analysis
+- Reproducibility documentation
 
----
+The original MSc work and the newer research extension are kept separate so it is clear what was done in 2021 and what has been added later.
 
-## 🔗 Research Profile Links
+## 🔗 Links
 
-- 🌐 **Research website:** coming soon
-- 📄 **Academic CV:** coming soon
-- 🧬 **ORCID:** to be added
-- 📚 **MSc dissertation:** public PDF link to be added after preparing the shareable version
-- 💼 [LinkedIn](https://www.linkedin.com/in/amangupta1911)
-- 💻 [GitHub](https://github.com/kaashgarg19)
+- [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+- [GitHub](https://github.com/kaashgarg19)
 
-These placeholders are intentional; no unverified profile URL or identifier is being invented.
+## 🎯 Current Goal
 
----
+I am preparing my research portfolio for future **MPhil/PhD research opportunities in Australia**, with a focus on AI, Data Science and IoT.
 
-## 🌱 Current Research Direction
-
-I am interested in pursuing research in **AI, Data Science and IoT**, with a particular focus on developing machine-learning systems that remain reliable when real-world sensor data changes over time, across devices and across environmental conditions.
-
-I am currently preparing for future **MPhil/PhD research opportunities in Australia**.
-
----
-
-⭐ Thanks for visiting my profile!
+Thanks for visiting my profile!
