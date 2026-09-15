@@ -6,7 +6,15 @@ A machine-learning project based on my MSc dissertation and environmental IoT se
 
 My MSc dissertation was **Intelligent System to Predict Human Movement near IoT Devices**.
 
-The project looks at environmental sensor readings and uses machine-learning methods to predict whether human movement is present near an IoT device.
+The project uses environmental sensor readings from IoT devices and machine-learning methods to study and predict whether human movement is recorded.
+
+## Dataset
+
+The project uses the **Environmental Sensor Telemetry Data** dataset published on Kaggle by **Gary A. Stafford**.
+
+The Kaggle dataset is listed as **CC0: Public Domain**. The source, dataset structure and licence have been checked against the Kaggle dataset page.
+
+[Dataset source on Kaggle](https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k)
 
 ## What I used
 
@@ -21,7 +29,7 @@ The project looks at environmental sensor readings and uses machine-learning met
 ## Main steps
 
 1. Load and understand the dataset
-2. Clean and prepare the data
+2. Check and prepare the data
 3. Explore the sensor readings
 4. Train machine-learning models
 5. Compare the model results
@@ -36,8 +44,6 @@ The project looks at environmental sensor readings and uses machine-learning met
 **Dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
 
 ## Project Documentation
-
-The documentation is being built step by step, starting with the original MSc project and its basic dataset and methodology.
 
 - [Project overview](docs/01_project_overview.md)
 - [MSc background](docs/02_msc_background.md)
@@ -57,4 +63,4 @@ research/iot-human-movement-prediction/
 └── requirements.txt
 ```
 
-More analysis and documentation can be added later as the project develops.
+The repository is being kept simple and documents the project from its MSc foundation onward.
