@@ -1,20 +1,24 @@
 # MSc Background
 
-## Degree
+## Education
 
-**MSc Advanced Computer Science**  
+**MSc Advanced Computer Science — Distinction**  
 Birmingham City University, UK
-
-**Result:** Distinction
 
 ## Dissertation
 
 **Intelligent System to Predict Human Movement near IoT Devices**
 
-## What I worked on
+## Project work
 
 The MSc project used environmental IoT sensor data and machine-learning techniques to investigate human movement near IoT devices.
 
-The work included data preparation, data exploration, visualisation, model training and evaluation.
+The work included:
 
-This project is the foundation of the research work documented here.
+- Data preparation
+- Data exploration
+- Visualisation
+- Machine-learning models
+- Model evaluation
+
+This MSc project provides the foundation for the work documented in this repository.
