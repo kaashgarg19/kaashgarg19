@@ -12,7 +12,9 @@ Place the authorised copy of the dataset at:
 data/raw/iotdata.csv
 ```
 
-The exact Kaggle URL, dataset owner, licence, retrieval date and SHA-256 hash are still required before the repository can be described as fully reproducible.
+The dataset source, publisher and licence are documented in `docs/dataset_documentation.md`.
+
+For an exact rerun, the local dataset hash and software versions should also be recorded alongside the experiment results.
 
 ## 2. Create the environment
 
@@ -44,7 +46,7 @@ Run notebook `01_data_validation.ipynb` and confirm:
 - Unix-second timestamps
 - 13 duplicated timestamp values
 
-If these checks do not match, stop and audit the dataset version before interpreting any result.
+If these checks do not match, stop and review the dataset version before interpreting any result.
 
 ## 4. Historical MSc reconstruction
 
@@ -54,17 +56,17 @@ Run `02_msc_original_analysis.ipynb` to document the MSc foundation and compare 
 
 ## 5. Current research evaluation
 
-The current research notebooks use the full rare-event dataset and the canonical model factories in `src/models.py`.
+The current research notebooks use the full rare-event dataset and the model configurations documented in `src/models.py`.
 
 - `03_baseline_models.ipynb` — random stratified 60/20/20 evaluation.
 - `04_temporal_evaluation.ipynb` — chronological 60/20/20 evaluation.
-- `05_robustness_analysis.ipynb` — index and interpretation rules for robustness artifacts.
+- `05_robustness_analysis.ipynb` — robustness analysis and result references.
 
-Threshold selection must use validation data only. The final test set must remain untouched until evaluation.
+Threshold selection uses validation data only. The final test set remains untouched until evaluation.
 
-## 6. Canonical research metrics currently recorded
+## 6. Research metrics
 
-The audited research record currently preserves the following average-precision values:
+The documented research record currently preserves these average-precision values:
 
 | Split | Logistic Regression | HistGradientBoosting | Random Forest |
 |---|---:|---:|---:|
@@ -73,26 +75,26 @@ The audited research record currently preserves the following average-precision 
 
 The chronological test partition contains 92 positive events.
 
-These values are dataset-specific pilot evidence. They are not universal performance claims.
+These values are dataset-specific pilot evidence and are not universal performance claims.
 
-## 7. Provenance metadata still required
+## 7. Recording an experiment
 
-Before external supervisor outreach or publication, add:
+For each reproducible result, record:
 
-1. Dataset URL
-2. Dataset owner/author
-3. Dataset licence
-4. Retrieval date
-5. SHA-256 hash
-6. Exact Python version
-7. Exact package versions
-8. Git commit identifying the analysis
-9. Runtime/hardware details if they materially affect results
-10. Exact canonical CSV/figure outputs for each experiment
+1. Dataset source and version
+2. Dataset SHA-256 hash
+3. Python version
+4. Package versions
+5. Experiment ID
+6. Git commit
+7. Split strategy
+8. Model configuration
+9. Evaluation metrics
+10. Main result and limitations
 
 ## 8. Interpretation rules
 
-Accuracy must not be used as the main performance claim because the positive event rate is approximately 0.119%. Prioritise average precision, precision, recall and F1, together with threshold behaviour and uncertainty where available.
+Accuracy is not used as the main performance claim because the positive event rate is approximately 0.119%. Average precision, precision, recall and F1 are prioritised, together with threshold behaviour where relevant.
 
 Feature importance and ablation describe predictive model behaviour; they do not establish causality.
 
