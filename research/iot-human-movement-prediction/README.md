@@ -1,109 +1,127 @@
-# Robust Human Movement Prediction from Environmental IoT Sensors
+# Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
 
 ## Overview
 
-This repository documents the development of a research extension of my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+This research repository documents a reproducible extension of my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
 
-The project investigates how reliably machine-learning models can predict human-movement events from environmental IoT sensor data, with particular attention to class imbalance, temporal generalisation and device-level distribution shift.
+The study investigates whether machine-learning predictions remain reliable when environmental IoT data are extremely imbalanced and when evaluation conditions change across time and sensing devices.
 
-## Research direction
+## Research question
 
-The work is being developed as a reproducible research study rather than as a single model-comparison exercise.
+**How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?**
 
-### Core questions
+## Research boundary
 
-1. How accurately can human movement be predicted from environmental IoT sensor measurements?
-2. How does performance change when evaluation is performed on later time periods rather than randomly sampled observations?
-3. How well do models generalise to IoT devices that were not represented in training data?
-4. Which sensor features contribute most to predictive performance?
-5. How sensitive are conclusions to class imbalance and the decision threshold?
+The MSc foundation established the human-movement prediction problem using environmental IoT telemetry. The current extension adds a reliability-focused evaluation layer: chronological testing, unseen-device testing, feature ablation, threshold sensitivity and uncertainty analysis.
+
+The later experiments are explicitly presented as an extension and are not described as work completed in the original MSc dissertation.
+
+## Dataset snapshot
+
+- 405,184 rows
+- 9 columns
+- 6 environmental sensor features
+- 3 IoT devices
+- 482 positive movement events
+- ~0.119% positive prevalence
+- approximately 8 days of observations
+- timestamp interpreted as Unix seconds
+
+The dataset was obtained from Kaggle. The raw file is intentionally not redistributed here until its exact source, attribution and licence have been verified.
+
+See [`docs/codebook.md`](docs/codebook.md) and [`docs/dataset_documentation.md`](docs/dataset_documentation.md).
 
 ## Models
 
-The experimental plan includes:
+Canonical model families:
 
 - Logistic Regression
 - Random Forest
-- Histogram-based Gradient Boosting
+- Histogram Gradient Boosting
 
-Models will be evaluated using metrics appropriate for imbalanced classification, including precision, recall, F1-score, ROC-AUC and PR-AUC where applicable. Accuracy will not be treated as the primary metric when class imbalance makes it misleading.
-
-## Experimental workflow
-
-```text
-Dataset
-   ↓
-Data validation & provenance
-   ↓
-Cleaning / preprocessing
-   ↓
-Baseline reproduction
-   ↓
-Model comparison
-   ↓
-Random Forest evaluation
-   ↓
-Temporal evaluation
-   ↓
-Unseen-device evaluation
-   ↓
-Feature ablation
-   ↓
-Threshold sensitivity
-   ↓
-Results + limitations
-```
-
-## Dataset
-
-The dataset used for the research extension was obtained from Kaggle. It is therefore treated as an external dataset, not as data originally collected by me.
-
-Dataset provenance, licensing information, variables and permitted use will be documented in [`docs/dataset_documentation.md`](docs/dataset_documentation.md).
-
-Raw data will not be redistributed here unless redistribution is clearly permitted by the dataset licence.
+The evaluation prioritises average precision, precision, recall and F1 because the positive class is extremely rare. Balanced accuracy is secondary; accuracy alone is not a meaningful headline result for this dataset.
 
 ## Repository structure
 
 ```text
-.
+research/iot-human-movement-prediction/
 ├── README.md
+├── requirements.txt
+├── data/
+│   └── raw/
+│       └── README.md
 ├── docs/
 │   ├── research_questions.md
 │   ├── dataset_documentation.md
 │   ├── codebook.md
 │   ├── methodology.md
-│   └── experimental_protocol.md
+│   ├── experimental_protocol.md
+│   └── msc_foundation.md
 ├── notebooks/
 │   ├── 01_data_validation.ipynb
-│   ├── 02_baseline_models.ipynb
-│   ├── 03_random_forest.ipynb
+│   ├── 02_msc_original_analysis.ipynb
+│   ├── 03_baseline_models.ipynb
 │   ├── 04_temporal_evaluation.ipynb
-│   ├── 05_device_generalisation.ipynb
-│   └── 06_feature_ablation.ipynb
+│   └── 05_robustness_analysis.ipynb
 ├── src/
-├── results/
-└── figures/
+│   ├── __init__.py
+│   ├── data.py
+│   ├── splits.py
+│   ├── models.py
+│   └── evaluation.py
+└── results/
+    └── README.md
 ```
 
-The notebook and source-code files will be added after the dataset and original MSc implementation have been checked against the research documentation.
+## Notebook roles
 
-## Relationship to MSc dissertation
+1. **01_data_validation** — schema, timestamp, device and imbalance audit.
+2. **02_msc_original_analysis** — reproducible reconstruction of the MSc analytical foundation and telemetry visualisation.
+3. **03_baseline_models** — controlled random 60/20/20 evaluation.
+4. **04_temporal_evaluation** — chronological 60/20/20 evaluation.
+5. **05_robustness_analysis** — entry point for unseen-device, feature-ablation, threshold and uncertainty artifacts.
 
-This project preserves the original MSc research direction while extending the evaluation beyond the original study. The extension is designed to test whether reported predictive performance remains reliable under more realistic evaluation conditions.
+Jupyter notebooks are JSON documents with cells and metadata, so these files are stored as valid notebook-format text rather than opaque binary artifacts. citeturn0search0
 
-## Reproducibility principles
+## Canonical experimental record
 
-- Record dataset provenance.
-- Keep preprocessing explicit.
-- Separate training and evaluation data appropriately.
-- Avoid leakage across temporal or device boundaries.
-- Record model parameters and random seeds where relevant.
-- Report multiple evaluation metrics.
-- Preserve intermediate results and experiment configurations.
-- State limitations and unresolved questions clearly.
+The audited research record contains completed pilot experiments covering random baselines, temporal evaluation, leave-one-device-out testing, feature ablation, threshold sensitivity, temporal-gap sensitivity, recall uncertainty and PR/calibration diagnostics.
+
+The repository deliberately distinguishes canonical results from later conflicting reruns. In particular, the later `FINAL_TEMPORAL_AUDIT_RESULTS.csv` is excluded from the canonical record because it used a different Random Forest configuration.
+
+## Key evidence
+
+The audited record reports:
+
+- Random-split AP: Logistic Regression 0.003968; HistGradientBoosting 0.009588; Random Forest 0.009638.
+- Chronological AP: Logistic Regression 0.004150; HistGradientBoosting 0.004028; Random Forest 0.002801.
+- Temporal test set: 92 positive events.
+- Random Forest feature importance is led by temperature and humidity in the audited configuration, but these values are predictive evidence rather than causal evidence.
+
+These are dataset-specific pilot findings, not claims of universal model superiority.
+
+## Reproducibility checklist
+
+Before calling the repository fully reproducible, record:
+
+- [ ] Exact dataset URL and owner
+- [ ] Dataset licence
+- [ ] Retrieval date
+- [ ] SHA-256 dataset hash
+- [ ] Python version
+- [ ] pandas / NumPy / scikit-learn versions
+- [ ] Runtime/hardware where relevant
+- [x] Split protocol
+- [x] Random seed
+- [x] Preprocessing rules
+- [x] Canonical model configurations
+- [x] Threshold-selection rule
+- [x] Canonical metrics and experiment inventory
 
 ## Status
 
-**Stage: Research portfolio build / experimental validation in progress.**
-
-This repository will be updated incrementally as experiments are reproduced, checked and extended.
+**Research foundation:** complete  
+**Dataset audit:** complete  
+**Core and robustness experiments:** complete in the research record  
+**GitHub reproducibility package:** being assembled  
+**Next:** add verified canonical CSV outputs and the exact dataset provenance/hash information.
