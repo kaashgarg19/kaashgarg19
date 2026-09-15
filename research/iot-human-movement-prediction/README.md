@@ -1,166 +1,117 @@
-# Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
+# Human Movement Prediction using IoT Data
 
-![Research](https://img.shields.io/badge/Research-Rare--Event%20IoT%20ML-informational) ![Python](https://img.shields.io/badge/Python-Reproducible%20Workflow-informational) ![Status](https://img.shields.io/badge/Status-Active%20Research%20Portfolio-informational)
+## About this project
 
-## Overview
+This is my main research project. It started from my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
 
-This research repository documents a reproducible extension of my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+The original MSc work used environmental sensor data and machine learning to predict human movement. I am now continuing that work and looking at a more practical question:
 
-The study investigates whether machine-learning predictions remain reliable when environmental IoT data are extremely imbalanced and when evaluation conditions change across time and sensing devices.
+> **How reliable are these predictions when the data changes over time or between IoT devices?**
 
-## MSc foundation — connected to the original work
+This repository keeps my original MSc work separate from the newer research work.
 
-The GitHub project is directly connected to the original MSc implementation recovered from the dissertation appendix. The original work loaded the IoT telemetry dataset, checked its structure and missing values, explored environmental variables, transformed timestamp/device information, created a balanced modelling subset, and compared multiple classification algorithms including Logistic Regression, KNN, Random Forest, Decision Tree, XGBoost, Gaussian NB, SVC and Gradient Boosting. The dissertation also used cross-validation and hyperparameter search.
+## 🔬 What I am working on
 
-See [`docs/msc_original_implementation.md`](docs/msc_original_implementation.md), [`src/msc_original.py`](src/msc_original.py), and [`docs/msc_results.md`](docs/msc_results.md).
+- Human movement prediction
+- IoT sensor data
+- Machine learning
+- Very imbalanced data
+- Prediction over time
+- Testing models on different devices
+- Feature analysis
+- Model thresholds and evaluation
 
-The historical MSc workflow is preserved for provenance. It is **not** silently presented as the later robustness methodology.
+## 🎓 MSc starting point
 
-## Research question
+**Degree:** MSc Advanced Computer Science  
+**University:** Birmingham City University, UK  
+**Result:** Distinction  
+**Dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
 
-**How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?**
+The original project compared several machine-learning models. The historical results are documented separately so they are not confused with the newer experiments.
 
-## Research boundary
+👉 [MSc foundation](docs/msc_foundation.md)  
+👉 [Original implementation](docs/msc_original_implementation.md)  
+👉 [Original MSc results](docs/msc_results.md)
 
-The MSc foundation established the human-movement prediction problem using environmental IoT telemetry. The current extension adds a reliability-focused evaluation layer: chronological testing, unseen-device testing, feature ablation, threshold sensitivity and uncertainty analysis.
+## 📊 Dataset
 
-The later experiments are explicitly presented as an extension and are not described as work completed in the original MSc dissertation.
+The working dataset contains:
 
-## MSc outputs
-
-The repository includes a verified historical MSc results record and lightweight reconstructed figures:
-
-- [`results/msc_original_results.csv`](results/msc_original_results.csv) — reported model-comparison accuracies.
-- [`figures/msc_model_accuracy.svg`](figures/msc_model_accuracy.svg) — reconstructed accuracy comparison.
-- [`figures/msc_research_bridge.svg`](figures/msc_research_bridge.svg) — MSc-to-current-research bridge.
-- [`notebooks/02_msc_original_analysis.ipynb`](notebooks/02_msc_original_analysis.ipynb) — reproducible MSc foundation notebook.
-- [`docs/dissertation.md`](docs/dissertation.md) — dissertation landing page.
-
-The figures are labelled **reconstructed** rather than represented as the original dissertation artwork. The original dissertation contains the source screenshots.
-
-## Dataset snapshot
-
-- 405,184 rows
+- 405,184 observations
 - 9 columns
-- 6 environmental sensor features
+- 6 environmental sensor measurements
 - 3 IoT devices
-- 482 positive movement events
-- ~0.119% positive prevalence
-- approximately 8 days of observations
-- timestamp interpreted as Unix seconds
+- 482 movement events
+- About 0.119% positive events
+- About 8 days of observations
 
-The dataset was obtained from Kaggle. The raw file is intentionally not redistributed here until its exact source, attribution and licence have been verified.
+The dataset came from Kaggle. The raw file is not included in this repository while its exact source and licence are being verified.
 
-See [`docs/codebook.md`](docs/codebook.md), [`docs/dataset_documentation.md`](docs/dataset_documentation.md), and [`docs/reproducibility.md`](docs/reproducibility.md).
+👉 [Dataset documentation](docs/dataset_documentation.md)  
+👉 [Codebook](docs/codebook.md)
 
-## Models
+## 🧪 Research experiments
 
-Canonical research-extension model families:
+I am comparing three main model types:
 
 - Logistic Regression
 - Random Forest
 - Histogram Gradient Boosting
 
-The evaluation prioritises average precision, precision, recall and F1 because the positive class is extremely rare. Balanced accuracy is secondary; accuracy alone is not a meaningful headline result for this dataset.
+The evaluation uses metrics such as precision, recall, F1 and average precision because movement events are very rare in the dataset.
 
-## Repository structure
+The research also includes:
+
+- Random vs chronological evaluation
+- Unseen-device testing
+- Feature ablation
+- Threshold sensitivity
+- Temporal-gap analysis
+- Recall uncertainty
+- Precision-recall and calibration analysis
+
+👉 [Research questions](docs/research_questions.md)  
+👉 [Experimental protocol](docs/experimental_protocol.md)  
+👉 [Reproducibility guide](docs/reproducibility.md)
+
+## 📁 Repository contents
 
 ```text
-research/iot-human-movement-prediction/
-├── README.md
-├── requirements.txt
-├── data/
-│   └── raw/
-│       └── README.md
-├── docs/
-│   ├── research_questions.md
-│   ├── dataset_documentation.md
-│   ├── codebook.md
-│   ├── methodology.md
-│   ├── experimental_protocol.md
-│   ├── reproducibility.md
-│   ├── repository_audit.md
-│   ├── msc_foundation.md
-│   ├── msc_original_implementation.md
-│   ├── msc_results.md
-│   └── dissertation.md
-├── figures/
-│   ├── README.md
-│   ├── msc_model_accuracy.svg
-│   └── msc_research_bridge.svg
-├── notebooks/
-│   ├── 01_data_validation.ipynb
-│   ├── 02_msc_original_analysis.ipynb
-│   ├── 03_baseline_models.ipynb
-│   ├── 04_temporal_evaluation.ipynb
-│   └── 05_robustness_analysis.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── data.py
-│   ├── splits.py
-│   ├── models.py
-│   ├── evaluation.py
-│   └── msc_original.py
-└── results/
-    ├── README.md
-    ├── canonical_research_metrics.csv
-    └── msc_original_results.csv
+├── data/        Dataset instructions
+├── docs/        Research notes and documentation
+├── figures/     Research figures
+├── notebooks/   Analysis notebooks
+├── results/     Verified results
+├── src/         Python code
+└── requirements.txt
 ```
 
-## Notebook roles
+## 📓 Notebooks
 
-1. **01_data_validation** — schema, timestamp, device and imbalance audit.
-2. **02_msc_original_analysis** — reproducible reconstruction of the MSc analytical foundation and historical results.
-3. **03_baseline_models** — controlled random 60/20/20 evaluation with validation-only threshold selection.
-4. **04_temporal_evaluation** — chronological 60/20/20 evaluation.
-5. **05_robustness_analysis** — documented entry point for the broader robustness evidence record.
+1. `01_data_validation.ipynb` — checks the dataset.
+2. `02_msc_original_analysis.ipynb` — documents the MSc work and historical results.
+3. `03_baseline_models.ipynb` — runs the controlled baseline evaluation.
+4. `04_temporal_evaluation.ipynb` — tests later observations.
+5. `05_robustness_analysis.ipynb` — documents the broader robustness analysis.
 
-## Canonical experimental record
+## 📌 Important note
 
-The audited research record contains completed pilot experiments covering random baselines, temporal evaluation, leave-one-device-out testing, feature ablation, threshold sensitivity, temporal-gap sensitivity, recall uncertainty and PR/calibration diagnostics.
+The current research is an extension of my MSc work. The later experiments were **not part of the original 2021 dissertation**.
 
-The repository deliberately distinguishes canonical results from later conflicting reruns. In particular, the later `FINAL_TEMPORAL_AUDIT_RESULTS.csv` is excluded from the canonical record because it used a different Random Forest configuration.
+The results are based on one dataset, three devices and a short observation period, so they should be treated as preliminary research evidence rather than universal conclusions.
 
-## Key evidence
+## 📈 Results
 
-The audited record reports:
+👉 [Original MSc model results](results/msc_original_results.csv)  
+👉 [Current research metrics](results/canonical_research_metrics.csv)
 
-- Random-split AP: Logistic Regression 0.003968; HistGradientBoosting 0.009588; Random Forest 0.009638.
-- Chronological AP: Logistic Regression 0.004150; HistGradientBoosting 0.004028; Random Forest 0.002801.
-- Temporal test set: 92 positive events.
-- Random Forest feature importance is led by temperature and humidity in the audited configuration, but these values are predictive evidence rather than causal evidence.
+## 🔁 Reproducibility
 
-These are dataset-specific pilot findings, not claims of universal model superiority.
+The project is being prepared so another researcher can understand the dataset, preprocessing, model settings, evaluation method and results.
 
-## Reproducibility checklist
+Some final reproducibility information is still being added, including the exact dataset provenance, licence, file hash and environment versions.
 
-Before calling the repository fully reproducible, record:
+## 📚 More information
 
-- [ ] Exact dataset URL and owner
-- [ ] Dataset licence
-- [ ] Retrieval date
-- [ ] SHA-256 dataset hash
-- [ ] Exact Python version
-- [ ] Exact pandas / NumPy / scikit-learn versions
-- [ ] Runtime/hardware where relevant
-- [x] Split protocol
-- [x] Random seed
-- [x] Preprocessing rules
-- [x] Canonical model configurations
-- [x] Threshold-selection rule
-- [x] Canonical metrics and experiment inventory
-- [ ] Canonical research-extension CSV/figure artifacts
-
-## Status
-
-**MSc-to-research connection:** complete  
-**MSc results package:** complete  
-**Research foundation:** complete  
-**Dataset audit:** complete for the working dataset; provenance metadata pending  
-**Core and robustness experiments:** complete in the research record  
-**GitHub reproducibility package:** substantially complete, with P0 provenance/output items pending  
-**Next:** verify dataset provenance/licence/hash and commit the remaining authoritative research-extension result/figure artifacts.
-
-## Audit
-
-See [`docs/repository_audit.md`](docs/repository_audit.md) for the file-by-file readiness assessment and priority fixes.
+👉 [Repository audit](docs/repository_audit.md)
