@@ -6,6 +6,14 @@ This research repository documents a reproducible extension of my MSc dissertati
 
 The study investigates whether machine-learning predictions remain reliable when environmental IoT data are extremely imbalanced and when evaluation conditions change across time and sensing devices.
 
+## MSc foundation — now connected to the original work
+
+The GitHub project is directly connected to the original MSc implementation recovered from the dissertation appendix. The original work loaded the IoT telemetry dataset, checked its structure and missing values, explored environmental variables, transformed timestamp/device information, created a balanced modelling subset, and compared multiple classification algorithms including Logistic Regression, KNN, Random Forest, Decision Tree, XGBoost, Gaussian NB, SVC and Gradient Boosting. The dissertation also used cross-validation and hyperparameter search.
+
+See [`docs/msc_original_implementation.md`](docs/msc_original_implementation.md) and [`src/msc_original.py`](src/msc_original.py).
+
+The historical MSc workflow is preserved for provenance. It is **not** silently presented as the later robustness methodology.
+
 ## Research question
 
 **How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?**
@@ -33,7 +41,7 @@ See [`docs/codebook.md`](docs/codebook.md) and [`docs/dataset_documentation.md`]
 
 ## Models
 
-Canonical model families:
+Canonical research-extension model families:
 
 - Logistic Regression
 - Random Forest
@@ -56,7 +64,8 @@ research/iot-human-movement-prediction/
 │   ├── codebook.md
 │   ├── methodology.md
 │   ├── experimental_protocol.md
-│   └── msc_foundation.md
+│   ├── msc_foundation.md
+│   └── msc_original_implementation.md
 ├── notebooks/
 │   ├── 01_data_validation.ipynb
 │   ├── 02_msc_original_analysis.ipynb
@@ -68,7 +77,8 @@ research/iot-human-movement-prediction/
 │   ├── data.py
 │   ├── splits.py
 │   ├── models.py
-│   └── evaluation.py
+│   ├── evaluation.py
+│   └── msc_original.py
 └── results/
     └── README.md
 ```
@@ -80,8 +90,6 @@ research/iot-human-movement-prediction/
 3. **03_baseline_models** — controlled random 60/20/20 evaluation.
 4. **04_temporal_evaluation** — chronological 60/20/20 evaluation.
 5. **05_robustness_analysis** — entry point for unseen-device, feature-ablation, threshold and uncertainty artifacts.
-
-Jupyter notebooks are JSON documents with cells and metadata, so these files are stored as valid notebook-format text rather than opaque binary artifacts. citeturn0search0
 
 ## Canonical experimental record
 
@@ -120,6 +128,7 @@ Before calling the repository fully reproducible, record:
 
 ## Status
 
+**MSc-to-research connection:** complete  
 **Research foundation:** complete  
 **Dataset audit:** complete  
 **Core and robustness experiments:** complete in the research record  
