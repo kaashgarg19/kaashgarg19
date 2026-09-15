@@ -2,15 +2,19 @@
 
 ## 1. Dataset identity
 
-**Project:** Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
+**Project:** Human Movement Prediction using IoT Data
 
 **Original MSc foundation:** Intelligent System to Predict Human Movement near IoT Devices
 
-**Source:** Kaggle dataset used in the MSc work. The raw dataset is intentionally **not included** in this repository until its exact source URL, author and licence have been verified.
+**Source:** Environmental Sensor Telemetry Data, published on Kaggle by **Gary A. Stafford**.
+
+**Licence:** CC0: Public Domain
+
+**Source checked:** 15 September 2026
 
 **Audited shape:** 405,184 rows × 9 columns.
 
-**Observation period:** approximately 13 April 2021 to 20 April 2021 UTC (~8 days).
+**Observation period:** 12 July 2020 to 19 July 2020 UTC (approximately 8 days).
 
 **Target:** `motion`.
 
@@ -24,44 +28,31 @@
 
 | Column | Role | Expected type | Description | Research use | Notes |
 |---|---|---|---|---|---|
-| `ts` | Identifier/time | integer-like | Unix timestamp in seconds | Chronological ordering and temporal splits | Treat as seconds; do not reinterpret as nanoseconds. |
-| `device` | Group identifier | categorical/integer-like | IoT device identifier | Device-level distribution-shift and leave-one-device-out evaluation | Keep separate from sensor features. |
+| `ts` | Identifier/time | integer-like | Unix timestamp in seconds | Chronological ordering and temporal splits | Treat as seconds. |
+| `device` | Group identifier | categorical/integer-like | IoT device identifier | Device-level evaluation | Kept separate from sensor features. |
 | `co` | Sensor feature | numeric | Carbon monoxide reading | Predictive feature | Environmental telemetry; not treated as causal. |
 | `humidity` | Sensor feature | numeric | Relative humidity reading | Predictive feature | Environmental telemetry; not treated as causal. |
 | `light` | Sensor feature | numeric | Light-level reading | Predictive feature | Environmental telemetry; not treated as causal. |
 | `lpg` | Sensor feature | numeric | Liquefied petroleum gas (LPG) reading | Predictive feature | Environmental telemetry; not treated as causal. |
 | `smoke` | Sensor feature | numeric | Smoke reading | Predictive feature | Environmental telemetry; not treated as causal. |
 | `temp` | Sensor feature | numeric | Temperature reading | Predictive feature | Environmental telemetry; not treated as causal. |
-| `motion` | Binary target | binary/integer | Indicator of movement/activity near the sensing environment | Classification target | Positive class is rare; use precision-recall metrics rather than accuracy alone. |
+| `motion` | Binary target | binary | Indicator of movement/activity near the sensing environment | Classification target | Positive class is rare; accuracy is not used as the main metric. |
 
-## 3. Important data-quality decisions
+## 3. Data-quality decisions
 
 - The dataset contains 405,184 observations and 9 columns.
-- There are 13 duplicated timestamp values, but duplicated timestamps are retained because simultaneous readings from different devices are plausible.
-- Timestamp interpretation is Unix seconds.
+- There are 13 duplicated timestamp values. They are retained because simultaneous readings from different devices are plausible.
+- The timestamp is interpreted as Unix seconds.
 - The target is extremely imbalanced: 482 positives out of 405,184 observations.
 - Accuracy is therefore not an appropriate headline metric.
-- The primary evaluation measures are average precision, precision, recall and F1; balanced accuracy is secondary.
-- Missing-value handling must be fitted on training data only when preprocessing is required.
-- Random and chronological evaluations must remain explicitly separated.
+- The main evaluation measures are average precision, precision, recall and F1-score.
+- Missing-value handling, where required, is fitted on training data only.
+- Random and chronological evaluations are kept separate.
 
-## 4. Feature interpretation policy
+## 4. Feature interpretation
 
-Sensor measurements are treated as predictive inputs. Feature importance or ablation results describe model behaviour and **must not be interpreted as evidence that a sensor variable causes human movement**.
+Sensor measurements are treated as predictive inputs. Feature importance and ablation results describe model behaviour and **must not be interpreted as evidence that a sensor variable causes human movement**.
 
-## 5. Reproducibility requirements
+## 5. Data access
 
-Before publication of the repository, record:
-
-1. Exact Kaggle dataset URL.
-2. Dataset author/owner.
-3. Dataset licence.
-4. Retrieval date.
-5. SHA-256 hash of the local raw dataset.
-6. Python version.
-7. pandas, NumPy and scikit-learn versions.
-8. Runtime/hardware where relevant.
-
-## 6. Data access rule
-
-Do not commit the raw Kaggle dataset to GitHub unless the dataset licence explicitly permits redistribution. The repository should instead contain documentation and a local path convention such as `data/raw/iotdata.csv`.
+The raw Kaggle CSV is not included in this repository. The source and licence information are documented above, and the original dataset should be obtained directly from Kaggle when reproducing the project.
