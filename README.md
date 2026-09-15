@@ -4,11 +4,13 @@
 
 I am an MSc Advanced Computer Science graduate from Birmingham City University. I enjoy working with data, Python, machine learning and software projects.
 
-## 🔬 Featured Project
+## 🔬 Research Project
 
 ### Human Movement Prediction using IoT Data
 
-My main project, based on my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+My main project is based on my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+
+The project uses environmental IoT sensor data and machine learning to study human movement.
 
 👉 [View the project](research/iot-human-movement-prediction/)
 
@@ -22,11 +24,15 @@ Maharshi Dayanand University, India
 
 ## 💻 Skills
 
-**Data & Programming:** Python, SQL, Pandas, NumPy, Jupyter
-
-**Machine Learning:** Scikit-learn, classification, data preprocessing and model evaluation
-
-**Other:** JavaScript, React Native, Angular, HTML, CSS
+- Python
+- SQL
+- Pandas & NumPy
+- Machine Learning
+- Data Analysis
+- Jupyter Notebook
+- JavaScript
+- React Native
+- Angular
 
 ## 📁 Other Projects
 
@@ -39,6 +45,5 @@ Maharshi Dayanand University, India
 ## 🔗 Links
 
 - [LinkedIn](https://www.linkedin.com/in/amangupta1911)
-- [GitHub](https://github.com/kaashgarg19)
 
 Thanks for visiting my profile!
