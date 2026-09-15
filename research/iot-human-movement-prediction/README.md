@@ -1,16 +1,18 @@
 # Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
 
+![Research](https://img.shields.io/badge/Research-Rare--Event%20IoT%20ML-informational) ![Python](https://img.shields.io/badge/Python-Reproducible%20Workflow-informational) ![Status](https://img.shields.io/badge/Status-Active%20Research%20Portfolio-informational)
+
 ## Overview
 
 This research repository documents a reproducible extension of my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
 
 The study investigates whether machine-learning predictions remain reliable when environmental IoT data are extremely imbalanced and when evaluation conditions change across time and sensing devices.
 
-## MSc foundation — now connected to the original work
+## MSc foundation — connected to the original work
 
 The GitHub project is directly connected to the original MSc implementation recovered from the dissertation appendix. The original work loaded the IoT telemetry dataset, checked its structure and missing values, explored environmental variables, transformed timestamp/device information, created a balanced modelling subset, and compared multiple classification algorithms including Logistic Regression, KNN, Random Forest, Decision Tree, XGBoost, Gaussian NB, SVC and Gradient Boosting. The dissertation also used cross-validation and hyperparameter search.
 
-See [`docs/msc_original_implementation.md`](docs/msc_original_implementation.md) and [`src/msc_original.py`](src/msc_original.py).
+See [`docs/msc_original_implementation.md`](docs/msc_original_implementation.md), [`src/msc_original.py`](src/msc_original.py), and [`docs/msc_results.md`](docs/msc_results.md).
 
 The historical MSc workflow is preserved for provenance. It is **not** silently presented as the later robustness methodology.
 
@@ -23,6 +25,18 @@ The historical MSc workflow is preserved for provenance. It is **not** silently 
 The MSc foundation established the human-movement prediction problem using environmental IoT telemetry. The current extension adds a reliability-focused evaluation layer: chronological testing, unseen-device testing, feature ablation, threshold sensitivity and uncertainty analysis.
 
 The later experiments are explicitly presented as an extension and are not described as work completed in the original MSc dissertation.
+
+## MSc outputs
+
+The repository now includes a verified historical MSc results record and lightweight reconstructed figures:
+
+- [`results/msc_original_results.csv`](results/msc_original_results.csv) — reported model-comparison accuracies.
+- [`figures/msc_model_accuracy.svg`](figures/msc_model_accuracy.svg) — reconstructed accuracy comparison.
+- [`figures/msc_research_bridge.svg`](figures/msc_research_bridge.svg) — MSc-to-current-research bridge.
+- [`notebooks/02_msc_original_analysis.ipynb`](notebooks/02_msc_original_analysis.ipynb) — reproducible MSc foundation notebook.
+- [`docs/dissertation.md`](docs/dissertation.md) — dissertation landing page.
+
+The figures are labelled **reconstructed** rather than represented as the original dissertation artwork. The original dissertation contains the source screenshots.
 
 ## Dataset snapshot
 
@@ -65,7 +79,13 @@ research/iot-human-movement-prediction/
 │   ├── methodology.md
 │   ├── experimental_protocol.md
 │   ├── msc_foundation.md
-│   └── msc_original_implementation.md
+│   ├── msc_original_implementation.md
+│   ├── msc_results.md
+│   └── dissertation.md
+├── figures/
+│   ├── README.md
+│   ├── msc_model_accuracy.svg
+│   └── msc_research_bridge.svg
 ├── notebooks/
 │   ├── 01_data_validation.ipynb
 │   ├── 02_msc_original_analysis.ipynb
@@ -80,7 +100,8 @@ research/iot-human-movement-prediction/
 │   ├── evaluation.py
 │   └── msc_original.py
 └── results/
-    └── README.md
+    ├── README.md
+    └── msc_original_results.csv
 ```
 
 ## Notebook roles
@@ -129,8 +150,9 @@ Before calling the repository fully reproducible, record:
 ## Status
 
 **MSc-to-research connection:** complete  
+**MSc results package:** complete  
 **Research foundation:** complete  
 **Dataset audit:** complete  
 **Core and robustness experiments:** complete in the research record  
-**GitHub reproducibility package:** being assembled  
-**Next:** add verified canonical CSV outputs and the exact dataset provenance/hash information.
+**GitHub reproducibility package:** in progress  
+**Next:** verify exact dataset provenance/licence/hash and add canonical research-extension CSV/figure outputs.
