@@ -1,9 +1,11 @@
 # Raw data
 
-Place the licensed/source dataset locally in this directory using the expected filename:
+The working dataset is the **Environmental Sensor Telemetry Data** dataset published on Kaggle by **Gary A. Stafford**.
 
-`iotdata.csv`
+Source: https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k
 
-The raw Kaggle dataset is **not committed** by default. Before redistribution, verify the dataset licence and attribution requirements.
+The Kaggle page lists the dataset licence as **CC0: Public Domain**.
 
-Record the exact source URL, dataset owner, retrieval date and SHA-256 hash in `docs/dataset_documentation.md`.
+The raw CSV is not committed to this repository. Download the source dataset directly from Kaggle when reproducing the project.
+
+The repository documentation records the dataset source, structure and licence so the origin of the data is clear.
