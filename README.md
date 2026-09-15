@@ -16,17 +16,17 @@ My current research builds on my MSc dissertation:
 
 > **Intelligent System to Predict Human Movement near IoT Devices**
 
-I am extending this work to investigate how reliably machine-learning models can predict rare human-movement events when sensor data changes across:
+I am extending this work to investigate how reliably machine-learning models can predict rare human-movement events when sensor data changes across time and sensing devices.
 
-- ⏱️ Time
-- 📡 IoT devices
-- 🌍 Environmental conditions
-- ⚖️ Highly imbalanced classes
+- ⏱️ Temporal generalisation
+- 📡 Unseen-device evaluation
+- ⚖️ Extreme class imbalance
+- 🔎 Feature ablation
+- 🎚️ Threshold sensitivity
+- 📐 Uncertainty and reliability analysis
 
-The work includes controlled experimental evaluation using Logistic Regression, Random Forest and Histogram-based Gradient Boosting, together with temporal evaluation, unseen-device analysis, feature ablation and threshold-sensitivity analysis.
-
-📁 **Research repository:**  
-`Coming soon`
+📁 **Flagship research repository:**  
+[IoT Human Movement Prediction](research/iot-human-movement-prediction/)
 
 ---
 
@@ -42,7 +42,9 @@ Maharshi Dayanand University, India
 
 **Intelligent System to Predict Human Movement near IoT Devices**
 
-Research involved environmental IoT sensor data, machine learning and Python-based analysis to investigate the prediction of human movement near IoT devices.
+The GitHub research project preserves a verified reconstruction of the original MSc implementation and results, then separates those historical methods from the later research extension.
+
+📚 [MSc implementation reconstruction](research/iot-human-movement-prediction/docs/msc_original_implementation.md) · [MSc results](research/iot-human-movement-prediction/docs/msc_results.md)
 
 ---
 
@@ -65,20 +67,16 @@ Research involved environmental IoT sensor data, machine learning and Python-bas
 
 ## 💻 Technical Skills
 
-**Programming & Data**
-
+**Programming & Data**  
 Python • SQL • JavaScript • JSON
 
-**Machine Learning & Analytics**
-
+**Machine Learning & Analytics**  
 Scikit-learn • Pandas • NumPy • Jupyter • Machine Learning • Data Analysis
 
-**Development**
-
+**Development**  
 React Native • Angular • Node.js • HTML • CSS
 
-**Research & Reproducibility**
-
+**Research & Reproducibility**  
 Experimental design • Model evaluation • Data preprocessing • Statistical analysis • Research documentation • Reproducible workflows
 
 ---
@@ -86,33 +84,33 @@ Experimental design • Model evaluation • Data preprocessing • Statistical 
 ## 📊 Selected Projects
 
 ### 🔬 IoT Human Movement Prediction
-Research project extending my MSc work into robust evaluation of rare human-movement prediction under temporal and device-level distribution shifts.
-
-### 📈 Data Science & Machine Learning
-Machine-learning and data-analysis projects involving exploratory analysis, prediction and model evaluation.
-
-### 📊 Amazon Prime Data Analysis
-Exploratory analysis of Amazon Prime/IMDb-related data using Python and Jupyter Notebook.
+Flagship research project extending my MSc work into robust evaluation of rare human-movement prediction under temporal and device-level distribution shifts.
 
 ### 📈 Stock Market Portfolio Optimisation
 Data-driven analysis of portfolio optimisation and risk/return relationships.
+
+### 📊 Amazon Prime Data Analysis
+Exploratory analysis using Python and Jupyter Notebook.
+
+### 📈 Data Science & Machine Learning
+Machine-learning projects involving exploratory analysis, prediction and model evaluation.
 
 ---
 
 ## 📚 Research & Reproducibility
 
-I am building a reproducible research workflow around my IoT research, including:
+The flagship repository includes:
 
-- Experimental logs
-- Dataset documentation
-- Model configurations
-- Evaluation protocols
-- Results tables
-- Feature-ablation analysis
-- Temporal evaluation
-- Unseen-device evaluation
+- Dataset documentation and codebook
+- Original MSc implementation reconstruction
+- Original MSc model-comparison outputs
+- Reconstructed MSc figures
+- Experimental protocol
+- Baseline and temporal evaluation notebooks
+- Unseen-device analysis
+- Feature ablation
 - Threshold sensitivity
-- Research documentation
+- Uncertainty analysis
 
 ---
 
