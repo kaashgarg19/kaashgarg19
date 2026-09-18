@@ -5,7 +5,7 @@
 **Aman Gupta**  
 Computer Science · Data Analytics · Machine Learning · IoT Research
 
-[Research repository](https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction) · [Portfolio website](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+[Research repository](https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction) · [Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/research/iot-human-movement-prediction/Aman_Gupta_Research_CV.pdf) · [Portfolio website](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
 
 </div>
 
@@ -37,7 +37,7 @@ The research repository keeps the **2021 MSc work separate from the later analys
 - Decision-threshold analysis
 - Reproducible machine-learning workflows
 
-[Explore the research repository](https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction)
+[Explore the research repository](https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction) · [Download Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/research/iot-human-movement-prediction/Aman_Gupta_Research_CV.pdf)
 
 ## Selected projects
 
@@ -87,6 +87,7 @@ Restaurant operations, customer service and team coordination in a high-volume e
 ## Portfolio links
 
 **Website:** https://kaashgarg19.github.io/kaashgarg19/  
+**Research CV:** https://github.com/kaashgarg19/kaashgarg19/blob/main/research/iot-human-movement-prediction/Aman_Gupta_Research_CV.pdf  
 **ORCID:** https://orcid.org/0009-0007-4112-9993  
 **LinkedIn:** https://www.linkedin.com/in/amangupta1911  
 **GitHub:** https://github.com/kaashgarg19
