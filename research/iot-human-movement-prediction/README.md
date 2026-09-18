@@ -6,7 +6,7 @@
 
 **Environmental IoT · Machine Learning · Human Movement · Reproducible Evaluation**
 
-[Research questions](docs/research_questions.md) · [Research proposal](docs/research_proposal.md) · [Literature review](docs/literature_review.md) · [MSc foundation](docs/msc_foundation.md) · [Dataset](docs/dataset_documentation.md) · [Methodology](docs/methodology.md) · [Experiments](docs/experimental_protocol.md) · [Reproducibility](docs/reproducibility.md)
+[Research CV](Aman_Gupta_Research_CV.pdf) · [Research questions](docs/research_questions.md) · [Research proposal](docs/research_proposal.md) · [Literature review](docs/literature_review.md) · [MSc foundation](docs/msc_foundation.md) · [Dataset](docs/dataset_documentation.md) · [Methodology](docs/methodology.md) · [Experiments](docs/experimental_protocol.md) · [Reproducibility](docs/reproducibility.md)
 
 </div>
 
