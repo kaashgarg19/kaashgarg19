@@ -1,43 +1,73 @@
-# SQL & Analytics
+# SQL and Analytics
 
-This folder contains practical SQL work I have done while building up my data-analysis skills.
+This folder contains my SQL practice and small analysis projects.
 
-## Bike Sales Analysis
+## Bike Sales SQL Analysis
 
-The main exercise in this folder uses three CSV files based on the BikeStores sample database structure:
-- Customers.csv
-- Orders.csv
-- Products.csv
+This project uses the BikeStores sample database and focuses on three straightforward questions:
 
-The public BikeStores sample database is commonly documented as a SQL Server sample database with sales and production schemas. The version used here has been kept as three simpler CSV tables, so the queries are written to match the files actually stored in this repository.
-
-Source reference: https://www.sqlservertutorial.net/getting-started/sql-server-sample-database/
-
-## Questions answered
-1. Which customer bought which product?
+1. Which product did each customer purchase?
 2. Which five products generated the most revenue?
 3. Which five customers placed the most orders?
 
-## What I practised
-- Joining related tables
-- Matching customer and product IDs
-- Aggregating sales values
-- Counting customer orders
-- Sorting and limiting results
-- Keeping the SQL consistent with the actual data structure
+The main query file is [bike_sales_analysis.sql](bike_sales_analysis.sql).
 
-## Results
+### Data source
 
-The current CSVs contain 1,445 customers, 4,722 orders and 321 products.
+The table names and database structure used by the SQL queries follow the BikeStores sample database published by SQL Server Tutorial.
 
-The verified results are recorded in [Bike_Sales_Results.md](Bike_Sales_Results.md).
+Source: https://www.sqlservertutorial.net/getting-started/sql-server-sample-database/
 
-## Files
-- [bike_sales_analysis.sql](bike_sales_analysis.sql) — SQL queries used for the analysis
-- [Bike_Sales_Results.md](Bike_Sales_Results.md) — short record of the results
+The repository also contains CSV exports used for this exercise:
+
 - [Customers.csv](Customers.csv)
 - [Orders.csv](Orders.csv)
 - [Products.csv](Products.csv)
-- [AmanGupta_Velocity_Bikes_Analysis.pdf](AmanGupta_Velocity_Bikes_Analysis.pdf) — earlier analysis document retained as project history
 
-I have kept the written documentation separate from the SQL so the queries can be read and checked on their own.
+The CSVs are kept as project working files. They should not be confused with the original database schema: the SQL queries use the normalised sales and production tables from the BikeStores sample database.
+
+### Results from the CSV working files
+
+I recalculated the summary below from the CSV files currently stored in this folder.
+
+- Customers: 1,445
+- Order rows: 4,722
+- Products: 293
+
+#### Top products by calculated revenue
+
+Revenue here is calculated as quantity × price from the CSV order rows.
+
+| Product | Revenue |
+|---|---:|
+| Trek Slash 8 27.5 - 2016 | 615,998.46 |
+| Trek Conduit+ - 2016 | 434,998.55 |
+| Trek Fuel EX 8 29 - 2016 | 414,698.57 |
+| Surly Straggler 650b - 2016 | 253,829.49 |
+| Trek Domane SLR 6 Disc - 2017 | 236,499.57 |
+
+#### Customers with the highest order count
+
+The highest count in the current CSV files is 3 orders. Five customers returned by the analysis are:
+
+- Monika Berg
+- Saturnina Garner
+- Ronna Butler
+- Cleotilde Booth
+- Williemae Holloway
+
+There are ties at three orders, so the exact five names should not be read as a unique ranking.
+
+### What I practised
+
+This project helped me practise:
+
+- JOIN
+- GROUP BY
+- aggregate functions
+- revenue calculations
+- COUNT
+- ordering and limiting results
+- reading a relational sales structure
+
+I have kept the explanation simple because this is a practical SQL project, not a research project.
