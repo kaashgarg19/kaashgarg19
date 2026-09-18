@@ -1,79 +1,46 @@
 <div align="center">
 
-<img src="research-banner.svg" alt="Aman Gupta research banner" width="100%" />
-
 # Aman Gupta
 
-**Researcher | AI • Data Science • IoT**
+**MSc Computer Science | Data & Machine Learning | IoT | SQL**
 
-MSc Advanced Computer Science — Birmingham City University
-
-[Research](#featured-research) • [Projects](#projects) • [SQL & Analytics](#sql--analytics) • [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+[Research project](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) • [SQL work](sql/) • [LinkedIn](https://www.linkedin.com/in/amangupta1911)
 
 </div>
 
 ---
 
-## About Me
+## About me
 
-I am a Computer Science graduate with a Master's in Advanced Computer Science from Birmingham City University. I enjoy working with data, Python, SQL, machine learning and IoT projects.
+I am a Computer Science graduate with an MSc in Advanced Computer Science from Birmingham City University. I enjoy working with data and building practical projects with Python, SQL and machine learning.
 
-## Featured Research
+My MSc dissertation looked at using environmental IoT data to predict human movement. I have kept that work as the starting point for an ongoing, reproducible analysis project.
 
-### 🔬 Human Movement Prediction using IoT Data
+## What you will find here
 
-My main research project is based on my MSc dissertation, **Intelligent System to Predict Human Movement near IoT Devices**.
+### IoT and machine learning
 
-The project uses environmental IoT sensor data and machine-learning methods to study human movement.
+[Robust IoT Human Movement Prediction](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)
 
-**Research direction:** Robust rare-event human movement prediction from environmental IoT sensors.
+A separate repository for my MSc work, data checks, Python analysis and later experimental work. The original dissertation and later analysis are clearly separated.
 
-👉 **[View the research project](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)**
+### SQL and analytics
 
-## Research Journey
+[Bike Sales SQL Analysis](sql/)
 
-**BTech Computer Science**
+A practical SQL exercise covering joins, revenue aggregation and customer order analysis.
 
-↓
+[Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA)
 
-**MSc Advanced Computer Science — Distinction**
+Exploratory data analysis using Python and visualisation.
 
-↓
+[Stock Market Portfolio Optimization](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION)
 
-**MSc Dissertation**
+A Python project exploring historical prices, returns, risk and portfolio combinations.
 
-↓
+### Earlier software projects
 
-**Dataset and experimental re-analysis**
-
-↓
-
-**Further data and model analysis**
-
-## Projects
-
-| Area | Work |
-|---|---|
-| 🔬 Research | Human movement prediction using IoT data |
-| 📊 Data Science | Data analysis and machine learning projects |
-| 📈 Analytics | SQL and data analysis projects |
-| 💻 Software | React Native, JavaScript and Angular projects |
-
-## SQL & Analytics
-
-I am also building practical SQL and analytics projects alongside my Python and machine-learning work.
-
-- 🗄️ [Bike Sales SQL Analysis](sql/) — joins, aggregation, revenue analysis and customer/order analysis
-- 📊 [Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA)
-- 📈 [Stock Market Portfolio Optimization](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION)
-
-## Research Outputs
-
-- MSc dissertation
-- Research documentation
-- Machine-learning code
-- Experimental results
-- Reproducibility materials
+I also keep a selection of earlier React Native, JavaScript and Angular projects here. They are part of my development history and show how my work has moved from software projects towards data and research.
 
 ## Education
 
@@ -85,15 +52,12 @@ Maharshi Dayanand University, India
 
 ## Skills
 
-`Python` `SQL` `Pandas` `NumPy` `Machine Learning` `Data Analysis` `Jupyter` `Matplotlib` `JavaScript` `React Native` `Angular`
+`Python` `SQL` `Pandas` `NumPy` `Scikit-learn` `Machine Learning` `Data Analysis` `Jupyter` `Matplotlib` `JavaScript` `React Native` `Angular`
 
-## Other Projects
+## A note about the projects
 
-- 📈 [Stock Market Portfolio Optimization](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION)
-- 📺 [Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA)
-- 💎 [Data Science Coursework 1 — Diamond Price Prediction](https://github.com/kaashgarg19/Data-Science-CourseWork)
-- 🚗 [Data Science Coursework 2 — Used Car Price Prediction](https://github.com/kaashgarg19/DataScience-Coursework-2)
+I prefer to keep the repositories understandable and honest: the README should explain what I actually built, the data source should be clear, and results should only be included when they have been checked from the underlying files.
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/amangupta1911) • GitHub
+[LinkedIn](https://www.linkedin.com/in/amangupta1911)
