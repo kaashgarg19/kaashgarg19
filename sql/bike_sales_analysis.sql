@@ -1,57 +1,66 @@
 -- Bike Sales SQL Analysis
--- Dataset: Customers.csv, Orders.csv, Products.csv
--- These queries match the CSV structure stored in this repository.
---
--- BikeStores reference:
+-- Dataset: BikeStores sample database
+-- Source:
 -- https://www.sqlservertutorial.net/getting-started/sql-server-sample-database/
 --
--- Expected tables after importing the CSV files:
--- Customers(customer_id, first_name, last_name, ...)
--- Orders(order_id, customer_id, product_id, quantity, price, order_date)
--- Products(product_id, product_name, model_year, price)
+-- These queries use the normalised BikeStores schema:
+--   sales.customers
+--   sales.orders
+--   sales.order_items
+--   production.products
 --
--- Revenue calculation used here: quantity * price
--- No discount column is present in Orders.csv.
+-- The CSV files in this folder are working exports used for the exercise.
+-- They are not a one-to-one copy of the normalised database schema.
 
--- 1. Find each customer's name and the product they purchased.
+-- 1. Find each customer's name and the product they purchased
 SELECT
     c.first_name,
     c.last_name,
     p.product_name
-FROM Customers AS c
-JOIN Orders AS o
+FROM sales.customers AS c
+JOIN sales.orders AS o
     ON c.customer_id = o.customer_id
-JOIN Products AS p
-    ON o.product_id = p.product_id
+JOIN sales.order_items AS oi
+    ON o.order_id = oi.order_id
+JOIN production.products AS p
+    ON oi.product_id = p.product_id
 ORDER BY
     c.last_name,
     c.first_name,
     p.product_name;
 
--- 2. Find the top 5 products by revenue.
+
+-- 2. Find the top 5 products by revenue
+-- Revenue is calculated after the item discount.
 SELECT TOP 5
     p.product_name,
-    SUM(o.quantity * o.price) AS revenue
-FROM Orders AS o
-JOIN Products AS p
-    ON o.product_id = p.product_id
+    SUM(oi.quantity * oi.list_price * (1 - oi.discount)) AS revenue
+FROM sales.order_items AS oi
+JOIN production.products AS p
+    ON oi.product_id = p.product_id
 GROUP BY
     p.product_name
 ORDER BY
-    revenue DESC;
+    revenue DESC,
+    p.product_name ASC;
 
--- 3. Find the top 5 customers by total number of orders.
+
+-- 3. Find the top 5 customers by total number of orders
+-- The extra name/id ordering makes ties deterministic.
 SELECT TOP 5
     c.customer_id,
     c.first_name,
     c.last_name,
     COUNT(o.order_id) AS total_orders
-FROM Customers AS c
-JOIN Orders AS o
+FROM sales.customers AS c
+JOIN sales.orders AS o
     ON c.customer_id = o.customer_id
 GROUP BY
     c.customer_id,
     c.first_name,
     c.last_name
 ORDER BY
-    total_orders DESC;
+    total_orders DESC,
+    c.last_name ASC,
+    c.first_name ASC,
+    c.customer_id ASC;
