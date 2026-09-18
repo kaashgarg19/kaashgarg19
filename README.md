@@ -13,9 +13,9 @@ Computer Science · Data Analytics · Machine Learning · IoT Research
 
 I am a Computer Science graduate with an **MSc in Advanced Computer Science (Distinction)** from Birmingham City University.
 
-My work sits across **data analytics, machine learning, IoT sensing, SQL and practical software development**. I enjoy taking a real dataset or technical problem, understanding it carefully, and building an analysis or prototype that can be explained and reproduced.
+My work is mainly around **data analytics, machine learning, IoT sensing, SQL and practical software development**. I like working with real datasets, understanding what the data is showing, and building analysis that can be followed by someone else.
 
-My MSc dissertation explored environmental IoT sensor data for human-movement prediction. I am now developing that work into a more controlled research study focused on how predictive models behave when movement events are rare and the data changes across time and devices.
+My MSc dissertation explored environmental IoT sensor data for human-movement prediction. I am now revisiting that work and extending the analysis to look at rare movement events and what happens when the data changes over time or between devices.
 
 ## Research
 
@@ -23,13 +23,13 @@ My MSc dissertation explored environmental IoT sensor data for human-movement pr
 
 **Original MSc dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
 
-The current research repository keeps the **2021 MSc work separate from the later research extension**. It documents the dataset, methodology, reconstructed historical results, current evaluation protocol, notebooks, source code and research limitations.
+The research repository keeps the **2021 MSc work separate from the later analysis**. It documents the dataset, original implementation, reconstructed historical results, current experiments, notebooks, source code and limitations.
 
 **Current research question**
 
 > How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?
 
-**Research areas**
+**Areas I am exploring**
 - Rare-event prediction and class imbalance
 - Temporal evaluation and generalisation
 - Device-level distribution shift
@@ -84,11 +84,6 @@ Sep 2022–Nov 2024
 
 Restaurant operations, customer service and team coordination in a high-volume environment, with progression to Trainee Team Leader.
 
-**GXO Logistics — Inventory Clerk, Part Time**  
-Jun 2022–Sep 2022
-
-Supported inventory and warehouse processes.
-
 ## Portfolio links
 
 **Website:** https://kaashgarg19.github.io/kaashgarg19/  
@@ -106,7 +101,3 @@ I try to keep each project clear about what it is and what it is not.
 - Dataset sources and limitations are documented where relevant.
 - Results are only highlighted when they can be traced to project files or documented analysis.
 - Research claims are kept within the evidence available from the current dataset and experiments.
-
----
-
-<sub>Personal portfolio: Computer Science, data analytics, machine learning, IoT and reproducible technical work.</sub>
