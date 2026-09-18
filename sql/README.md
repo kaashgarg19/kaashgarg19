@@ -10,7 +10,7 @@ This project uses the BikeStores sample database and focuses on three straightfo
 2. Which five products generated the most revenue?
 3. Which five customers placed the most orders?
 
-The main query file is [bike_sales_analysis.sql](bike_sales_analysis.sql).
+The main query file is [bike_sales_analysis.sql](bike_sales_analysis.sql). A checked summary of the CSV results is in [bike_sales_results.md](bike_sales_results.md).
 
 ### Data source
 
