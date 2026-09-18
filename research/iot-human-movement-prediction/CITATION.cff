@@ -9,9 +9,10 @@ repository-code: "https://github.com/kaashgarg19/kaashgarg19/tree/main/research/
 url: "https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction"
 abstract: "Research repository for human movement prediction using environmental IoT sensor data, building on an MSc dissertation and subsequent experimental analysis."
 keywords:
-  - IoT
+  - environmental IoT
+  - human movement
   - machine learning
-  - human movement prediction
-  - environmental sensors
-  - data science
+  - rare-event prediction
+  - distribution shift
+  - reproducible research
 license: MIT
