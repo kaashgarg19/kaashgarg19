@@ -16,7 +16,8 @@ My main technical project. It contains the MSc background, the original work, da
 
 ### SQL and data analysis
 
-**[Bike Sales SQL Analysis](sql/)**
+**[Bike Sales SQL Analysis](sql/)**  
+The checked CSV results are documented in [bike_sales_results.md](sql/bike_sales_results.md).
 
 A practical SQL exercise using the BikeStores sample database. I worked with joins, aggregation, revenue calculations and customer order counts.
 
@@ -61,6 +62,10 @@ I am trying to keep each repository straightforward:
 - keep coursework separate from later projects
 - show results only when I can trace them back to the files
 - avoid presenting unfinished work as a finished publication
+
+## Project list
+
+For a simple map of the repositories and what each one contains, see [PROJECT_INDEX.md](PROJECT_INDEX.md).
 
 ## Contact
 
