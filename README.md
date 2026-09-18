@@ -1,45 +1,70 @@
-# Aman Gupta
+<!-- Profile hero -->
+<p align="center">
+  <img src="./assets/profile-banner.svg" alt="Aman Gupta — Data, Machine Learning, IoT and SQL" width="100%" />
+</p>
 
-**MSc Advanced Computer Science | Data Analysis | Machine Learning | IoT | SQL**
+<p align="center">
+  <b>Computer Science graduate</b> · Data Analysis · Machine Learning · IoT · SQL
+</p>
 
-I am a Computer Science graduate with an MSc in Advanced Computer Science from Birmingham City University. I enjoy working with data, learning how systems behave, and turning coursework or practical problems into projects that I can explain clearly.
+<p align="center">
+  <a href="https://github.com/kaashgarg19/robust-iot-human-movement-prediction">IoT Research Project</a>
+  ·
+  <a href="https://github.com/kaashgarg19/kaashgarg19/blob/main/PROJECT_INDEX.md">Project Index</a>
+  ·
+  <a href="https://www.linkedin.com/in/amangupta1911">LinkedIn</a>
+</p>
 
-My MSc dissertation explored the use of environmental IoT data and machine-learning methods to predict human movement. I am keeping that work as the starting point for a separate, carefully documented project rather than mixing it with my older coursework.
+---
 
-## What is on my GitHub
+## About me
 
-### IoT and Python
+I am a Computer Science graduate with an **MSc in Advanced Computer Science** from Birmingham City University.
 
-**[IoT Human Movement Project](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)**
+I enjoy working with data, understanding how systems behave, and turning practical problems into projects that I can explain clearly. My main interests are **data analysis, machine learning, IoT sensing, and predictive modelling**.
 
-My main technical project. It contains the MSc background, the original work, data checks and reproducible Python analysis. I am keeping the original MSc work and later analysis separate so the history of the project is easy to follow.
+My MSc dissertation explored the use of environmental IoT data and machine-learning methods to predict human movement. I am continuing that work as a separate, carefully documented project while keeping my earlier coursework and software projects visible as part of my development history.
 
-### SQL and data analysis
+## Current research project
 
-**[Bike Sales SQL Analysis](sql/)**  
-The checked CSV results are documented in [bike_sales_results.md](sql/bike_sales_results.md).
+### Robust Rare-Event Human Movement Prediction from Environmental IoT Sensors
 
-A practical SQL exercise using the BikeStores sample database. I worked with joins, aggregation, revenue calculations and customer order counts.
+My main technical project extends the work from my MSc dissertation.
 
-**[Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA)**
+The project focuses on:
+- environmental IoT sensor data
+- rare-event prediction and class imbalance
+- chronological evaluation
+- device-level distribution shift
+- feature sensitivity and threshold behaviour
+- reproducible Python experiments
 
-An exploratory Python project using a movies and TV dataset. It was one of my earlier hands-on projects with pandas, visualisation and exploratory analysis.
+**Repository:**  
+[robust-iot-human-movement-prediction](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)
 
-**[Stock Market Portfolio Analysis](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION)**
+> The repository keeps the original MSc work separate from the later analysis so that the development of the project is easy to follow.
 
-A learning project looking at historical prices, returns, volatility and simple portfolio combinations.
+## Selected projects
 
-### Coursework
+| Project | What it shows |
+| --- | --- |
+| **[IoT Human Movement Prediction](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)** | Python, IoT sensor data, machine learning and reproducible evaluation |
+| **[Bike Sales SQL Analysis](https://github.com/kaashgarg19/kaashgarg19/tree/main/sql)** | SQL joins, aggregation, revenue calculations and customer analysis |
+| **[Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA)** | Python, pandas, visualisation and exploratory analysis |
+| **[Stock Market Portfolio Analysis](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION)** | Historical prices, returns, volatility and portfolio calculations |
+| **[Data Science Coursework](https://github.com/kaashgarg19/Data-Science-CourseWork)** | Regression and practical Python data analysis |
+| **[Opportunity Dataset Team Project](https://github.com/kaashgarg19/Opportunity-Dataset-Team-Project-)** | Team-based data cleaning, EDA, visualisation and reporting |
 
-**[Data Science Coursework](https://github.com/kaashgarg19/Data-Science-CourseWork)**  
-Diamond price prediction using Python and regression.
+## Skills & tools
 
-**[Data Science Coursework 2](https://github.com/kaashgarg19/DataScience-Coursework-2)**  
-Used-car price prediction and early work with data preparation and regression.
+**Data & ML**  
+Python · Pandas · NumPy · Scikit-learn · Jupyter · Matplotlib · Seaborn
 
-### Earlier software projects
+**Data & databases**  
+SQL · MySQL · Power BI · Excel
 
-I also keep my older React Native, JavaScript and Angular projects here. They are part of my development history and show where I started before focusing more on data and machine learning.
+**Development**  
+JavaScript · React Native · Angular
 
 ## Education
 
@@ -49,24 +74,27 @@ Birmingham City University, UK
 **BTech Computer Science Engineering**  
 Maharshi Dayanand University, India
 
-## Tools I have used
+## How I work
 
-Python · SQL · Pandas · NumPy · Scikit-learn · Jupyter · Matplotlib · Seaborn · JavaScript · React Native · Angular
+I try to keep my repositories straightforward:
 
-## How I keep the projects
-
-I am trying to keep each repository straightforward:
-
-- say what I actually did
-- identify the data source where I can
-- keep coursework separate from later projects
-- show results only when I can trace them back to the files
+- explain what I actually did
+- identify the data source where possible
+- keep coursework separate from later research work
+- document results so they can be traced back to the analysis
+- keep original project files when their layout or visual content matters
 - avoid presenting unfinished work as a finished publication
 
-## Project list
+## Project map
 
-For a simple map of the repositories and what each one contains, see [PROJECT_INDEX.md](PROJECT_INDEX.md).
+For the full repository-by-repository overview:
+
+**[PROJECT_INDEX.md](https://github.com/kaashgarg19/kaashgarg19/blob/main/PROJECT_INDEX.md)**
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/amangupta1911)
+[LinkedIn](https://www.linkedin.com/in/amangupta1911) · [GitHub](https://github.com/kaashgarg19)
+
+---
+
+<sub>Profile design uses a navy research-style visual identity. The GitHub page itself controls the surrounding theme; the banner provides the consistent navy background and typography within the profile.</sub>
