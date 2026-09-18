@@ -18,6 +18,8 @@ The table names and database structure used by the SQL queries follow the BikeSt
 
 Source: https://www.sqlservertutorial.net/getting-started/sql-server-sample-database/
 
+An earlier submission PDF is also kept in this folder for record: [AmanGupta_Velocity_Bikes_Analysis.pdf](AmanGupta_Velocity_Bikes_Analysis.pdf). The checked Markdown results note is the easier file to inspect because it is tied directly to the CSV working files.
+
 The repository also contains CSV exports used for this exercise:
 
 - [Customers.csv](Customers.csv)
