@@ -10,7 +10,7 @@ My MSc dissertation at Birmingham City University investigated whether environme
 
 The current project starts from that work but asks a narrower research question: **how reliable is a machine-learning prediction when the data distribution changes over time or across sensing devices?**
 
-This matters because sensor-based machine learning is often evaluated under an assumption that training and test data are similarly distributed. Recent human-activity-recognition research continues to identify device, sensor and contextual variation as important sources of distribution shift. Reviews also describe temporal heterogeneity and concept drift as recurring issues in streaming sensor data. citeturn1search10turn1search0
+This matters because sensor-based machine learning is often evaluated under an assumption that training and test data are similarly distributed. Recent human-activity-recognition research continues to identify device, sensor and contextual variation as important sources of distribution shift. Reviews also describe temporal heterogeneity and concept drift as recurring issues in streaming sensor data.
 
 ## Problem statement
 
@@ -20,7 +20,7 @@ The research extension keeps the rare-event structure intact and evaluates model
 
 ## Working research gap
 
-The literature establishes that sensor-based human-activity models can be affected by temporal and device-related distribution shifts. Recent work has moved toward domain generalisation, distribution-shift benchmarks and continual adaptation. citeturn1search0turn1search1turn1search2
+The literature establishes that sensor-based human-activity models can be affected by temporal and device-related distribution shifts. Recent work has moved toward domain generalisation, distribution-shift benchmarks and continual adaptation.
 
 The specific gap this project will investigate is narrower:
 
@@ -149,7 +149,7 @@ Next research stage:
 
 ## Key literature to build from
 
-- Chen, Odema & Al Faruque (2025), *DisCovHAR: Contrastive Attention for Human Activity Recognition Under Distribution Shifts*, IEEE Internet of Things Journal. citeturn1search0
-- Adaimi & Thomaz (2026), *Assessing Distribution Shift in Human Activity Recognition for Domain Generalization*. citeturn1search1
-- Øren et al. (2025), *Concept Drift Under Harsh Constraints: A Review of Potential Strategies for IoT Systems*, IEEE Access. citeturn1search4
-- Review: *Machine Learning Techniques for Sensor-Based Human Activity Recognition with Data Heterogeneity*. citeturn1search10
+- Chen, Odema & Al Faruque (2025), *DisCovHAR: Contrastive Attention for Human Activity Recognition Under Distribution Shifts*, IEEE Internet of Things Journal.
+- Adaimi & Thomaz (2026), *Assessing Distribution Shift in Human Activity Recognition for Domain Generalization*.
+- Øren et al. (2025), *Concept Drift Under Harsh Constraints: A Review of Potential Strategies for IoT Systems*, IEEE Access.
+- Review: *Machine Learning Techniques for Sensor-Based Human Activity Recognition with Data Heterogeneity*.
