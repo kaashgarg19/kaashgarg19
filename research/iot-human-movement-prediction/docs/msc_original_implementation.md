@@ -2,13 +2,13 @@
 
 ## Purpose
 
-This document connects the GitHub research project to the MSc dissertation implementation. The source evidence was recovered from the dissertation appendix/code section in `AmanGuptaDissertation_20101021(1).docx`.
+This document connects the GitHub research project to the MSc dissertation implementation. The source evidence was checked against the original MSc dissertation material and the recovered implementation. This page is written to explain the work in plain language while keeping the historical method separate from the current research extension.
 
 The original MSc project was different from the later robustness study. The original work established the human-movement prediction problem, performed exploratory IoT telemetry analysis, created a balanced modelling subset, and compared multiple classifiers.
 
 ## 1. Original research aim
 
-The MSc research aimed to predict, identify, examine and evaluate human movement near IoT devices using machine-learning methods and Python. The stated objectives included assessing environmental sensor telemetry, preprocessing sensor data from different devices/locations, applying data-mining methods, visualising telemetry, and evaluating data models.
+The MSc research asked a practical question: could readings from environmental IoT sensors be used to identify and predict human movement near the devices? The stated objectives included assessing environmental sensor telemetry, preprocessing sensor data from different devices/locations, applying data-mining methods, visualising telemetry, and evaluating data models.
 
 ## 2. Original dataset handling
 
