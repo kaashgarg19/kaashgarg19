@@ -10,7 +10,9 @@ Repository: https://github.com/kaashgarg19/robust-iot-human-movement-prediction
 MSc dissertation work and its documented re-analysis. The original MSc work is kept separate from later analysis.
 
 ### Bike Sales SQL Analysis
-Folder: sql/
+Repository folder: https://github.com/kaashgarg19/kaashgarg19/tree/main/sql  
+SQL file: https://github.com/kaashgarg19/kaashgarg19/blob/main/sql/bike_sales_analysis.sql  
+Checked results: https://github.com/kaashgarg19/kaashgarg19/blob/main/sql/bike_sales_results.md
 
 A practical SQL exercise using the BikeStores sample database. The folder contains the SQL queries, working CSVs, earlier submission files and a checked results note.
 
