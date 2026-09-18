@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071A33"/>
+    <stop offset="1" stop-color="#0B2A4A"/>
+  </linearGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#6EA8D8" stroke-opacity=".09"/>
+  </pattern>
+</defs>
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+<circle cx="1050" cy="65" r="120" fill="#4EA1D3" opacity=".07"/>
+<circle cx="1110" cy="310" r="170" fill="#8EC5E8" opacity=".05"/>
+<text x="72" y="105" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Aman Gupta</text>
+<text x="75" y="151" fill="#B9D8EF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="500">Data • Machine Learning • IoT • SQL</text>
+<line x1="76" y1="184" x2="440" y2="184" stroke="#6EA8D8" stroke-width="2" opacity=".7"/>
+<text x="76" y="226" fill="#EAF5FC" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18">MSc Advanced Computer Science · Birmingham City University</text>
+<text x="76" y="260" fill="#D2E7F4" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16">Building practical, reproducible projects with data and intelligent systems.</text>
+<g transform="translate(76 296)">
+  <rect width="104" height="34" rx="17" fill="#123B60" stroke="#477FA7"/>
+  <text x="52" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="600">PYTHON</text>
+  <rect x="116" width="82" height="34" rx="17" fill="#123B60" stroke="#477FA7"/>
+  <text x="157" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="600">SQL</text>
+  <rect x="210" width="142" height="34" rx="17" fill="#123B60" stroke="#477FA7"/>
+  <text x="281" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="600">DATA ANALYSIS</text>
+  <rect x="364" width="126" height="34" rx="17" fill="#123B60" stroke="#477FA7"/>
+  <text x="427" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="600">MACHINE LEARNING</text>
+</g>
+</svg>
