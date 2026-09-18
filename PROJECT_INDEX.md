@@ -1,11 +1,12 @@
 # Project Index
 
-This is a simple map of the public projects on my GitHub. I keep this separate from the profile README so the profile itself stays short.
+This is a quick map of the public projects on my GitHub. The profile README and portfolio website show the main story; this page gives a little more detail for anyone who wants to explore the work.
 
 ## Main data and IoT work
 
 ### IoT Human Movement Prediction
-Repository: https://github.com/kaashgarg19/robust-iot-human-movement-prediction
+Research repository: https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction
+Standalone repository: https://github.com/kaashgarg19/robust-iot-human-movement-prediction
 
 MSc dissertation work and its documented re-analysis. The original MSc work is kept separate from later analysis.
 
