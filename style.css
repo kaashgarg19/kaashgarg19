@@ -40,6 +40,7 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .nav nav { display: flex; gap: 28px; }
+.nav-actions { display: flex; align-items: center; gap: 18px; }
 .nav nav a, .nav-link {
   color: var(--muted);
   font-size: .86rem;
