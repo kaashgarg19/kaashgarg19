@@ -56,11 +56,27 @@ a { color: inherit; }
   margin: 0 auto;
   padding: 110px 28px 90px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 55px;
 }
-.hero-copy { max-width: 920px; }
+.hero-copy { max-width: 820px; flex: 1 1 auto; }
+.hero-profile { display: flex; flex-direction: column; align-items: center; gap: 18px; flex: 0 0 240px; }
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: 0 16px 38px rgba(17,24,39,.10);
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .eyebrow, .kicker {
   margin: 0;
   color: var(--accent);
@@ -94,15 +110,15 @@ em { color: var(--accent); font-style: normal; }
 }
 .button.primary { color: #fff; background: var(--accent); border-color: var(--accent); }
 .hero-note {
-  min-width: 180px;
+  width: 100%;
   padding-bottom: 6px;
   color: var(--muted);
-  font-size: .78rem;
+  font-size: .72rem;
   text-transform: uppercase;
   letter-spacing: .08em;
 }
-.hero-note p { margin: 10px 0 0; }
-.dot { display: block; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+.hero-note p { margin: 8px 0 0; text-align: center; }
+.dot { display: block; width: 9px; height: 9px; margin: 0 auto; border-radius: 50%; background: var(--accent); }
 
 .section {
   width: min(100%, var(--max));
@@ -195,11 +211,14 @@ footer {
   display: flex; justify-content: space-between; gap: 20px; color: var(--muted);
   border-top: 1px solid var(--line); font-size: .78rem;
 }
+@media (max-width: 900px) {
+  .hero { flex-direction: column; align-items: flex-start; padding-top: 85px; }
+  .hero-profile { align-self: center; width: 220px; }
+}
 @media (max-width: 820px) {
   .nav { padding: 17px 20px; }
   .nav nav { display: none; }
-  .hero { min-height: auto; padding: 85px 20px 75px; align-items: flex-start; flex-direction: column; }
-  .hero-note { display: none; }
+  .hero { min-height: auto; padding: 85px 20px 75px; gap: 38px; }
   .section { padding: 75px 20px; }
   .about-layout, .research-body, .contact-section { grid-template-columns: 1fr; gap: 40px; }
   .project-grid { grid-template-columns: 1fr; }
@@ -216,6 +235,8 @@ footer {
   .brand { font-size: 1.08rem; }
   .nav-link { display: none; }
   .hero h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
+  .hero-profile { width: 190px; flex-basis: auto; }
+  .hero-photo { width: 180px; height: 180px; }
   .research-card { padding: 24px; border-radius: 20px; }
   .research-meta { align-items: flex-start; gap: 15px; flex-direction: column; }
   .focus-grid { grid-template-columns: 1fr; }
