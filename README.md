@@ -5,7 +5,7 @@
 **Aman Gupta**  
 Computer Science · Data Analytics · Machine Learning · IoT Research
 
-[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_Research_CV.pdf) · [Portfolio website](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf) · [Portfolio website](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
 
 </div>
 
@@ -37,7 +37,7 @@ The research repository keeps the **2021 MSc work separate from the later analys
 - Decision-threshold analysis
 - Reproducible machine-learning workflows
 
-[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Explore the current research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Download Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_Research_CV.pdf)
+[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Explore the current research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Download Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf)
 
 ## Selected projects
 
@@ -88,7 +88,7 @@ Restaurant operations, customer service and team coordination in a high-volume e
 ## Portfolio links
 
 **Website:** https://kaashgarg19.github.io/kaashgarg19/  
-**Research CV:** https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_Research_CV.pdf  
+**Research CV:** https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf  
 **ORCID:** https://orcid.org/0009-0007-4112-9993  
 **LinkedIn:** https://www.linkedin.com/in/amangupta1911  
 **GitHub:** https://github.com/kaashgarg19
