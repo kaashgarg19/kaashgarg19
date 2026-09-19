@@ -5,10 +5,10 @@ This is a quick map of the public projects on my GitHub. The profile README and 
 ## Main data and IoT work
 
 ### IoT Human Movement Prediction
-Research repository: https://github.com/kaashgarg19/kaashgarg19/tree/main/research/iot-human-movement-prediction
-Standalone repository: https://github.com/kaashgarg19/robust-iot-human-movement-prediction
+Current research repository: https://github.com/kaashgarg19/robust-iot-human-movement-prediction
+Original MSc repository: https://github.com/kaashgarg19/iot-human-movement-prediction-msc
 
-MSc dissertation work and its documented re-analysis. The original MSc work is kept separate from later analysis.
+The original MSc dissertation and implementation are kept in their own repository. The current repository contains the later research extension and documented analysis.
 
 ### Bike Sales SQL Analysis
 Repository folder: https://github.com/kaashgarg19/kaashgarg19/tree/main/sql  
