@@ -13,17 +13,17 @@ Computer Science · Data Analytics · Machine Learning · IoT
 
 I’m a Computer Science graduate with an **MSc in Advanced Computer Science (Distinction)** from Birmingham City University.
 
-Most of my work sits around **data analysis, Python, SQL, machine learning and IoT data**. I enjoy taking a dataset, working out what is actually happening in it, and then turning that into something that is easier to understand and reproduce.
+I’ve spent most of my time working with **data, Python, SQL, machine learning and IoT data**. I like getting into a dataset, understanding what is really going on, and then building something that another person can follow and reproduce.
 
-My MSc dissertation was where my interest in IoT and human-movement prediction started. I have recently gone back to that work, kept the original implementation intact, and started extending the analysis to ask a different question: **how reliable is the prediction when the data changes over time or between devices?**
+My MSc dissertation is where my interest in IoT and human-movement prediction began. I’ve recently returned to that work, kept the original implementation separate, and started extending the analysis around a practical question: **how reliable are predictions when the data changes over time or between devices?**
 
 ## What I’m working on
 
 ### IoT human-movement prediction
 
-My original MSc project looked at whether environmental sensor measurements from IoT devices could be used to predict human movement.
+My original MSc project explored whether environmental sensor measurements from IoT devices could be used to predict human movement.
 
-I keep that work in a separate repository because I want the original 2021 implementation and the later research work to remain easy to distinguish.
+I keep the 2021 work in its own repository so there is a clear line between what I originally did and what I am working on now.
 
 The current research extension looks at:
 
@@ -79,12 +79,12 @@ Maharshi Dayanand University, India · 2011–2015
 **Concentrix — Advisor I, Customer Service**  
 Nov 2025–Present
 
-Customer support work involving case review, process adherence, escalation handling and accurate case documentation.
+Customer support work involving case review, following established processes, handling escalations and keeping case records accurate and clear.
 
 **KFC UKI — Team Member / Trainee Team Leader**  
 Sep 2022–Nov 2024
 
-Restaurant operations, customer service and team coordination in a busy environment, with progression to Trainee Team Leader.
+Restaurant operations, customer service and team coordination in a busy working environment, with progression to Trainee Team Leader.
 
 ## Links
 
@@ -96,13 +96,13 @@ Restaurant operations, customer service and team coordination in a busy environm
 
 ## How I like to document my work
 
-I try to keep my projects straightforward and honest about what I actually did.
+I try to keep my projects clear about what they are and what I actually did.
 
 - Original MSc work stays separate from the later research extension.
 - Team projects are described as team projects.
 - Coursework is labelled as coursework.
 - Dataset sources and limitations are documented where they matter.
-- Research results are kept tied to the code, notebooks and documented experiments.
-- I avoid making broader claims than the available evidence supports.
+- Research results are linked back to the code, notebooks and documented experiments.
+- I avoid making broader claims than the evidence supports.
 
-That is also how I want this profile to represent my work: **practical, clear and still developing.**
+That is how I want this profile to represent my work: **practical, clear and still developing.**
