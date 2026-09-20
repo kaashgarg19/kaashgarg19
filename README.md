@@ -77,12 +77,12 @@ Maharshi Dayanand University, India · 2011–2015
 ## A little about my experience
 
 **Concentrix — Advisor I, Customer Service**  
-Nov 2025–Present
+Nov 2025–Apr 2026
 
 Customer support work involving case review, following established processes, handling escalations and keeping case records accurate and clear.
 
 **KFC UKI — Team Member / Trainee Team Leader**  
-Sep 2022–Nov 2024
+Sep 2022–Jan 2025
 
 Restaurant operations, customer service and team coordination in a busy working environment, with progression to Trainee Team Leader.
 
