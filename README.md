@@ -3,64 +3,65 @@
 <img src="./assets/profile-banner.svg" alt="Aman Gupta — Computer Science, Data Analytics, Machine Learning and IoT" width="100%" />
 
 **Aman Gupta**  
-Computer Science · Data Analytics · Machine Learning · IoT Research
+Computer Science · Data Analytics · Machine Learning · IoT
 
-[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf) · [Portfolio website](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
+[Original MSc work](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Current research](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf) · [Portfolio](https://kaashgarg19.github.io/kaashgarg19/) · [ORCID](https://orcid.org/0009-0007-4112-9993) · [LinkedIn](https://www.linkedin.com/in/amangupta1911)
 
 </div>
 
-## About
+## About me
 
-I am a Computer Science graduate with an **MSc in Advanced Computer Science (Distinction)** from Birmingham City University.
+I’m a Computer Science graduate with an **MSc in Advanced Computer Science (Distinction)** from Birmingham City University.
 
-My work is mainly around **data analytics, machine learning, IoT sensing, SQL and practical software development**. I like working with real datasets, understanding what the data is showing, and building analysis that can be followed by someone else.
+Most of my work sits around **data analysis, Python, SQL, machine learning and IoT data**. I enjoy taking a dataset, working out what is actually happening in it, and then turning that into something that is easier to understand and reproduce.
 
-My MSc dissertation explored environmental IoT sensor data for human-movement prediction. I am now revisiting that work and extending the analysis to look at rare movement events and what happens when the data changes over time or between devices.
+My MSc dissertation was where my interest in IoT and human-movement prediction started. I have recently gone back to that work, kept the original implementation intact, and started extending the analysis to ask a different question: **how reliable is the prediction when the data changes over time or between devices?**
 
-## Research
+## What I’m working on
 
-### Human movement prediction from environmental IoT sensors
+### IoT human-movement prediction
 
-**Original MSc dissertation:** *Intelligent System to Predict Human Movement near IoT Devices*
+My original MSc project looked at whether environmental sensor measurements from IoT devices could be used to predict human movement.
 
-The research repository keeps the **2021 MSc work separate from the later analysis**. It documents the dataset, original implementation, reconstructed historical results, current experiments, notebooks, source code and limitations.
+I keep that work in a separate repository because I want the original 2021 implementation and the later research work to remain easy to distinguish.
 
-**Current research question**
+The current research extension looks at:
 
-> How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?
+- Rare movement events and class imbalance
+- Random versus chronological evaluation
+- Device-level evaluation
+- Feature ablation
+- Decision-threshold sensitivity
+- Reproducible machine-learning experiments
 
-**Areas I am exploring**
-- Rare-event prediction and class imbalance
-- Temporal evaluation and generalisation
-- Device-level distribution shift
-- Feature ablation and sensitivity
-- Decision-threshold analysis
-- Reproducible machine-learning workflows
+The main question I am exploring is:
 
-[Original MSc repository](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [Explore the current research repository](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) · [Download Research CV](https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf)
+> **How reliably can machine-learning models predict human movement from environmental IoT sensor data when the data distribution changes across time and sensing devices?**
 
-## Selected projects
+[See the original MSc work](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) · [See the current research](https://github.com/kaashgarg19/robust-iot-human-movement-prediction)
 
-| Project | Focus |
+## Some of my projects
+
+| Project | What I worked on |
 | --- | --- |
-| [IoT Human Movement Prediction — Research Extension](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) | IoT sensor data, Python, machine learning and research evaluation |
-| [Original MSc Dissertation](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) | Original MSc implementation and dissertation |
-| [Bike Sales SQL Analysis](https://github.com/kaashgarg19/kaashgarg19/tree/main/sql) | SQL joins, aggregation, revenue calculations and customer analysis |
-| [Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA) | Python, pandas, visualisation and exploratory data analysis |
-| [Stock Market Portfolio Analysis](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION) | Historical prices, returns, volatility and portfolio calculations |
+| [IoT Human Movement Prediction — Research Extension](https://github.com/kaashgarg19/robust-iot-human-movement-prediction) | Environmental IoT data, Python, machine learning and model evaluation |
+| [Original MSc Dissertation](https://github.com/kaashgarg19/iot-human-movement-prediction-msc) | Original Python implementation and dissertation |
+| [Bike Sales SQL Analysis](https://github.com/kaashgarg19/kaashgarg19/tree/main/sql) | SQL joins, grouping, revenue and customer analysis |
+| [Amazon Prime Data Analysis](https://github.com/kaashgarg19/AmazonPrime_Data_Analysis_EDA) | Python, pandas, exploratory analysis and visualisation |
+| [Stock Market Portfolio Analysis](https://github.com/kaashgarg19/STOCK_MARKET_PORTFOLIO_OPTIMIZATION) | Returns, volatility and portfolio calculations |
 | [Data Science Coursework 1](https://github.com/kaashgarg19/Data-Science-CourseWork) | Regression and practical Python data analysis |
-| [Opportunity Dataset Team Project](https://github.com/kaashgarg19/Opportunity-Dataset-Team-Project-) | Team-based data preparation, quality checks, visualisation and reporting |
+| [Opportunity Dataset Team Project](https://github.com/kaashgarg19/Opportunity-Dataset-Team-Project-) | Team-based data preparation, analysis and reporting |
 
-## Technical skills
+## Skills I use
 
-**Programming & data**  
+**Data & programming**  
 Python · SQL · MySQL · Pandas · NumPy · Scikit-learn
 
-**Analytics & visualisation**  
+**Analytics**  
 Power BI · Excel · Jupyter · Matplotlib · Seaborn · Exploratory Data Analysis
 
 **Machine learning**  
-Classification · Regression · Model evaluation · Imbalanced-data evaluation · Feature analysis · Predictive modelling
+Classification · Regression · Model evaluation · Imbalanced-data analysis · Feature analysis
 
 **Development**  
 JavaScript · React Native · Angular · Git · GitHub
@@ -73,7 +74,7 @@ Birmingham City University, UK · 2020–2021
 **BTech Computer Science Engineering**  
 Maharshi Dayanand University, India · 2011–2015
 
-## Professional experience
+## A little about my experience
 
 **Concentrix — Advisor I, Customer Service**  
 Nov 2025–Present
@@ -83,23 +84,25 @@ Customer support work involving case review, process adherence, escalation handl
 **KFC UKI — Team Member / Trainee Team Leader**  
 Sep 2022–Nov 2024
 
-Restaurant operations, customer service and team coordination in a high-volume environment, with progression to Trainee Team Leader.
+Restaurant operations, customer service and team coordination in a busy environment, with progression to Trainee Team Leader.
 
-## Portfolio links
+## Links
 
-**Website:** https://kaashgarg19.github.io/kaashgarg19/  
-**Research CV:** https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf  
+**Portfolio:** https://kaashgarg19.github.io/kaashgarg19/  
+**CV:** https://github.com/kaashgarg19/kaashgarg19/blob/main/Aman_Gupta_CV.pdf  
 **ORCID:** https://orcid.org/0009-0007-4112-9993  
 **LinkedIn:** https://www.linkedin.com/in/amangupta1911  
 **GitHub:** https://github.com/kaashgarg19
 
-## How I document my work
+## How I like to document my work
 
-I try to keep each project clear about what it is and what it is not.
+I try to keep my projects straightforward and honest about what I actually did.
 
-- Original MSc work is kept distinct from later research analysis.
-- Team projects are labelled as team projects.
-- Coursework is presented as coursework rather than as professional research.
-- Dataset sources and limitations are documented where relevant.
-- Results are only highlighted when they can be traced to project files or documented analysis.
-- Research claims are kept within the evidence available from the current dataset and experiments.
+- Original MSc work stays separate from the later research extension.
+- Team projects are described as team projects.
+- Coursework is labelled as coursework.
+- Dataset sources and limitations are documented where they matter.
+- Research results are kept tied to the code, notebooks and documented experiments.
+- I avoid making broader claims than the available evidence supports.
+
+That is also how I want this profile to represent my work: **practical, clear and still developing.**
